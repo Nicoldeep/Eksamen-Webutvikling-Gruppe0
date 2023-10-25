@@ -1,0 +1,210 @@
+/* selector used to give same style to all elements unless overwritten */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+
+/*to prevent elements to flow over the 'rows'*/
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+    float: left;
+}
+/* For tablets: non selectors overwritten here, only used in html to add width for boxes */
+@media only screen and (min-width: 600px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+/* For desktop: when in desktop screen this selectors will override the corresponding selectors below but only the declaration */
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    div.navbar ul{
+        float: right;
+        padding-top: 10px;
+    }
+    div.navbar li{
+        display: inline-block;
+    }
+    div.logo img{
+        width: 90px;
+    }
+    div.row2{
+        display: flex;
+        
+    }
+    div.scroll img{
+        width: 150px;
+    }
+}
+/* To change placement of scroll and title when we arent at desktop screen, 
+    might be confusing why this happened if we were supposed to be building for mobile screen first but we weren't at the beginning so this was the solution to fix the problem*/
+@media only screen and (max-width: 767px){
+    .row2{
+        display: inline-flex;
+        flex-direction: column-reverse;
+    }
+    div.title{
+        font-size: 30px;
+        text-align: center;
+        padding: 15px;
+    }
+}
+/*All selectors below are coded with the intention of making mobile screen view priority, 
+    how it acts out in tablet and desktop breakpoints depends on the chosing of width to our boxes in html.
+    The flow of selectors corresponds with the flow of elements in html
+*/
+body{
+    background-color:#EDE7D9;
+}
+/*Row1*/
+.row1{
+    background-color: #38726C;
+}
+.logo{
+    padding: 18px;
+}
+    .logo img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        width: 30%;
+    }
+.name{
+    color:black;
+    padding: 13px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 25px;
+}
+    .navbar li{
+        padding: 10px;
+        margin: 3px;
+        border: inset 3px #EDE7D9;
+        background-color: #A49694;
+        box-shadow: 3px 3px #EDE7D9 inset;
+        display: flex;
+        justify-content: center;
+    }
+    .navbar li:hover{
+        background-color: rgba(0, 26, 255, 0.185);
+    }
+    .navbar a{
+        color: black;
+        font-size: 15px;
+        text-decoration: none;
+    }
+/*Row2*/
+.scroll{
+    background:#352d2a;
+    padding: 30px;
+}
+    .scroll img{
+        width: 50%;
+        height: auto;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .overlay {
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #e7dcc1;
+    }
+    .scroll:hover .overlay{
+        opacity: 1;
+    }
+    .scroll a{
+        text-decoration: none;
+    }
+    .scroll a:visited{
+        color: blue;
+    }
+.title{
+    background-color:#5C4742;
+    color: #A49694;
+    padding-right: 10px;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    font-size: 72px;
+    text-align: right;
+}
+/*row3 and row4*/
+.row3{
+    padding: 10px;
+}
+.row4{
+    padding: 10px;
+}
+.information{
+    background-color: #e7dcc1;
+    padding: 40px;
+}
+    .page{
+        padding-bottom: 20px;
+    }
+    .page2{
+        padding-bottom: 10px;
+        padding-top: 30px;
+    }
+.row5{
+    padding: 10px;
+    padding-left: 20px;
+    background-color: #e7dcc1;
+}
+/*row5*/
+    .row5 .page{
+        text-align: center;
+    }
+    .row5 a:visited{
+        color: blue;
+    }
+    .ylink{
+        text-indent: 50px;
+    }
+    hr{
+        border: 1px solid #A49694 ;
+        border-radius: 1px; 
+        width: 95%;
+        margin-bottom: 10px;
+    }
+/*row6*/
+.footer {
+    background-color:#38726C;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding: 25px;
+}   
