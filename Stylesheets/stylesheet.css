@@ -1,0 +1,46 @@
+/** Font that is used across all pages which is the standard font for OsloMet**/
+body{
+    font-family: "Moderat", sans-serif;
+}
+
+.Links{
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: larger;
+}
+
+.Links:hover {
+    background-color: #fce135;
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-decoration-thickness: 2px;
+}
+
+.NavTekst{
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+}
+
+#Navbar{
+    width: 100%;
+    margin: auto;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFDC00;
+    position: sticky;
+    top: 0;
+}
+
+#NavbarLogo{
+    height: 100px;
+    width: 150px;
+    padding-left: 200px;
+}
+
+#Header{
+    height: 100%;
+    width: 60%;
+}
