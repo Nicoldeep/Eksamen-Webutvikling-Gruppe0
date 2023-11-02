@@ -1,46 +1,65 @@
-/** Font that is used across all pages which is the standard font for OsloMet**/
+/* Font that is used across all pages which is the standard font for OsloMet*/
 body{
     font-family: "Moderat", sans-serif;
+    margin: 0; /*to avoid white border around webpage*/
 }
 
-.Links{
-    padding: 10px 20px;
+.links{ /*Links in navbar are ordered in line and have padding for extra spacing */
+    padding: 10px;
     display: inline-block;
     font-size: larger;
 }
 
-.Links:hover {
+.links:hover { /*When you hover over a link, the background turns a slightly lighter yellow and a line underlines the text*/
     background-color: #fce135;
     text-decoration: underline;
     text-decoration-color: black;
     text-decoration-thickness: 2px;
 }
 
-.NavTekst{
+.nav-text{ /*navigation bar text is set to black, no underline, padding is 20px on all sides to space out the links */
     color: black;
     text-decoration: none;
     padding: 20px;
+    font-weight: bold;
+
 }
 
-#Navbar{
+
+.navbar{
     width: 100%;
     margin: auto;
-    padding: 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #FFDC00;
-    position: sticky;
-    top: 0;
 }
 
-#NavbarLogo{
+.navbar-logo{
     height: 100px;
     width: 150px;
     padding-left: 200px;
 }
 
-#Header{
-    height: 100%;
-    width: 60%;
+.main-pic{
+    width: 100%;
+}
+.main-text{
+    display: block;
+
+
+    padding-left: 400px;
+    padding-right: 400px;
+    text-align: center;
+
+    font-size: 20px;
+    padding-bottom: 5%;
+}
+
+footer {
+    height: 180px;
+    background-color:#FFDC00;
+    color: black;
+    text-align: center;
+    font-size: 15px;
 }

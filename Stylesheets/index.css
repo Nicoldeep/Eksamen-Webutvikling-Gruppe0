@@ -4,12 +4,12 @@
 }
 /* NAVBAR */
 
-.Links{
+.links{
   padding: 10px 20px;
   display: inline-block;
 }
 
-.Links:hover {
+.links:hover {
   background-color: #38726C;
   text-decoration: underline;
   text-decoration-color: #EDE7D9;
@@ -17,7 +17,7 @@
 
 }
 
-.NavTekst{
+.nav-text{
   color:#EDE7D9;
   text-decoration: none;
 }
