@@ -57,7 +57,7 @@ body{
 }
 
 /* Layout for siden delt i grids, er delt ved divene*/
-main{
+#cafeteria{
   display: grid;
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: auto;
@@ -71,7 +71,7 @@ main{
 
 /* Layout for siden med mindre størrelse på vindu */
 @media screen and (max-width: 1120px) {
-  main {
+  #cafeteria{
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
