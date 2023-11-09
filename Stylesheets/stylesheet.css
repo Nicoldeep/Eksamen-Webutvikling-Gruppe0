@@ -7,40 +7,53 @@ body{
     background-color: #EDE7D9;
 }
 
-.links{ /*Links in navbar are ordered in line and have padding for extra spacing */
-    padding: 10px;
-    display: inline-block;
-    font-size: larger;
-}
+/* NAVBAR */
 
-.links:hover { /*When you hover over a link, the background turns a slightly lighter color and a line underlines the text*/
-    background-color: #427971;
+.Links{
+    padding: 10px 20px;
+    display: inline-block;
+  }
+  
+  .Links:hover {
+  
+      background-color: #38726C;
     text-decoration: underline;
     text-decoration-color: black;
-    text-decoration-thickness: 2px;
-}
-
-.nav-text{ /*navigation bar text is set to black, no underline, padding is 20px on all sides to space out the links */
-    color: black;
+    text-decoration-thickness: 0.5px;
+  
+  }
+  
+  .NavTekst{
+      color:black;
     text-decoration: none;
-    padding: 20px;
-    font-weight: bolder;
-}
-
-
-.navbar{
+  }
+  
+  
+  #Navbar{
     width: 100%;
     margin: auto;
+    padding: 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #38726C;
-}
-
-.navbar-logo{
+    position: sticky;
+    top: 0;
+  }
+  
+  #NavbarLogo{
     height: 100px;
     width: 150px;
-}
+    padding-left: 20px;
+  }
+  
+  /* HEADER BILDET OG HOVEDOVERSKRIFT*/
+  
+  #HovedOverskrift{
+    font-size:70px;
+    text-align: center;
+    padding-top: 3%;
+  }
 
 .main-pic{
     width: 100%;
@@ -103,11 +116,16 @@ body{
     }
 }
 
+/* FOOTER */
 
 footer {
     height: 180px;
     background-color:#38726C;
-    color: #EDE7D9;
+    color: white;
     text-align: center;
     font-size: 15px;
-}
+  }   
+  
+  *{
+    font-family: "Quicksand", sans-serif;
+  }
