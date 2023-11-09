@@ -7,41 +7,62 @@ body{
     background-color: #EDE7D9;
 }
 
-.links{ /*Links in navbar are ordered in line and have padding for extra spacing */
-    padding: 10px;
-    display: inline-block;
-    font-size: larger;
-}
+/* NAVBAR */
 
-.links:hover { /*When you hover over a link, the background turns a slightly lighter color and a line underlines the text*/
-    background-color: #427971;
+.Links{
+    padding: 10px 20px;
+    display: inline-block;
+  }
+
+  .Links:hover {
+  
+      background-color: #38726C;
     text-decoration: underline;
     text-decoration-color: black;
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 0.5px;
 
 }
 
-.nav-text{ /*navigation bar text is set to black, no underline, padding is 20px on all sides to space out the links */
-    color: black;
+  
+
+  .NavTekst{
+      color:black;
     text-decoration: none;
-    padding: 20px;
-    font-weight: bolder;
-}
+    font-weight: bold;
+  }
 
 
-.navbar{
+  #Navbar{
     width: 100%;
     margin: auto;
+    padding: 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #38726C;
-}
+    position: sticky;
+    top: 0;
+  }
 
-.navbar-logo{
+  #NavbarLogo{
     height: 100px;
     width: 150px;
-}
+    padding-left: 20px;
+  }
+
+  /* HEADER BILDET OG HOVEDOVERSKRIFT*/
+
+  #HovedOverskrift{
+    font-size:70px;
+    text-align: center;
+    padding-top: 3%;
+  }
+
+  .TekstStørrelse{
+    font-size:x-large;
+    padding: 3px;
+    padding-left: 5%;
+    }
 
 .main-pic{
     width: 100%;
@@ -104,6 +125,7 @@ body{
     }
 }
 
+/* FOOTER */
 
 footer {
     
@@ -139,4 +161,11 @@ footer {
     .footer-box-container{
         display:block;
     }
+
+}
+
+
+    /**Changed the mailto link to be white since the default is dark blue and it clashes with the footer color**/
+.mailto-link{
+    color: white;
 }
