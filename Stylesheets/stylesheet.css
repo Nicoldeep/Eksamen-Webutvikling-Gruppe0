@@ -23,7 +23,6 @@ body{
 
 }
 
-  
 
   .NavTekst{
       color:#EDE7D9;
@@ -64,6 +63,8 @@ body{
     padding-left: 5%;
     }
 
+
+ /* CSS INDEX.HTML */
 .main-pic{
     width: 100%;
 }
@@ -130,6 +131,249 @@ body{
         grid-row: 2;
     }
 }
+
+
+/* CSS CAFETERIA */
+
+
+/* Layout for siden delt i grids, er delt ved divene*/
+#cafeteria{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto;
+    grid-row-gap: 15px;
+    grid-column-gap: 1%;
+  
+    padding-left: 2%;
+    padding-right: 3%;
+  }
+  
+  
+  /* Layout for siden med mindre størrelse på vindu */
+  @media screen and (max-width: 1120px) {
+    #cafeteria{
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: auto;
+      grid-row-gap: 40px;
+      
+  
+      padding-left: 2%;
+      padding-right: 3%;
+  
+      margin-right: auto;
+      margin-left: auto;
+      width: 70%;
+    }
+  
+  
+    hr.Skillelinje{
+    
+      border: 1px solid #A49694;
+      border-radius: 1px; 
+      width: auto;
+    }
+    .IngredienserTekst{
+      font-size: larger;
+      padding-left: 1%;
+    }
+  
+  
+    .MatBilderStørrelserOgMidtstill{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      border-radius: 6px;
+      min-width: 150px;
+      min-height: 100px;
+      max-width: 150px;
+      max-height: 100px;
+    }
+    
+    
+    .RotereBildetOgMidtstille{
+      transform: rotate(90deg);
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      height: 100px;
+      width: 100px;
+    }
+  
+    .typeRett{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      font-weight: bold;
+      font-family: Quicksand;
+      font-size: 40px;
+      }
+  
+        .TekstStørrelse{
+          font-size:x-large;
+          padding: 10px;
+          padding-left: 5%;
+         
+      }
+  
+      #ColdDrinks{
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;
+          border-radius: 6px;
+          min-width: 150px;
+          min-height: 100px;
+          max-width: 150px;
+          max-height: 100px;
+        }
+  }
+  
+  
+  /* Midtstiller bildene */
+  
+  .MatBilderStørrelserOgMidtstill{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 6px;
+    min-width: 350px;
+    min-height: 300px;
+    max-width: 350px;
+    max-height: 300px;
+  }
+  
+  /* Midtstiller bildene */
+  .RotereBildetOgMidtstille{
+    transform: rotate(90deg);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 300px;
+    width: 300px;
+  }
+  
+  /* CSS til linje*/
+  hr.Skillelinje{
+    border: 1px solid #A49694 ;
+    border-radius: 1px; 
+    width: 98%;
+  }
+  
+  .IngredienserTekst{
+    font-size: larger;
+    padding-left: 1%;
+  }
+  
+  /* Starter, Mains or Deserts */
+  .typeRett{
+  text-align: left;
+  font-weight: bold;
+  font-family: Quicksand;
+  font-size: 40px;
+  }
+  
+  /*  Retten sitt navn */
+  .RettNavn{
+  text-align: left;
+  font-size: larger;
+  padding-left: 1%;
+  }
+  
+  /* Retten sin pris */
+  .RettPris{
+  float: right;
+  font-size: larger;
+  padding-right: 1%;
+  }
+  
+  /* Størrelse på emojies og posisjon*/ 
+  .SizeEmoji{
+    font-size: x-large;
+    text-decoration-color: #5C4742;
+    padding-left: 1%;  
+  }
+  
+  /* Fjerner "underline" ved abbr*/
+  abbr{
+    border-bottom: none !important;
+    cursor: inherit !important;
+    text-decoration: none !important;
+  }
+  
+  /* Drinks */
+  .PrisDrikke{
+  float: right;
+  border-left: 2px solid #5C4742;
+  font-style: oblique;
+  }
+  
+  .DrikkeNavn{
+  float: left;
+  font-style: unset;
+  padding-left: 1%;
+  }
+  
+  #PrisOverskrift{
+    float: right;
+    font-style: unset;
+    font-size: larger;
+  }
+  
+  #DrikkeOverskrift{
+      text-align: left;
+      font-size: larger;
+      padding-left: 1%;
+  }
+  
+  /* Bilde av drikke */
+  #ColdDrinks{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 6px;
+    min-width: 350px;
+    min-height: 300px;
+    max-width: 350px;
+    max-height: 300px;
+   
+    padding-top: 5%;
+    padding-left: 10%;
+  }
+  
+ 
+
+/* CSS Library */
+
+
+
+
+
+
+
+/* CSS TOPICAL PAGE*/
+
+
+
+
+
+
+
+/* CSS ACCESSIBILITY PAGE*/
+
+
+
+
+
+
+
+
 
 /* FOOTER */
 
