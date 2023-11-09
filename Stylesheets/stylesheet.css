@@ -1,0 +1,113 @@
+/*Importing font we want to use*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+body{
+    font-family: "Quicksand", sans-serif;
+    margin: 0; /*to avoid white border around webpage*/
+    background-color: #EDE7D9;
+}
+
+.links{ /*Links in navbar are ordered in line and have padding for extra spacing */
+    padding: 10px;
+    display: inline-block;
+    font-size: larger;
+}
+
+.links:hover { /*When you hover over a link, the background turns a slightly lighter color and a line underlines the text*/
+    background-color: #427971;
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-decoration-thickness: 2px;
+}
+
+.nav-text{ /*navigation bar text is set to black, no underline, padding is 20px on all sides to space out the links */
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+    font-weight: bolder;
+}
+
+
+.navbar{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #38726C;
+}
+
+.navbar-logo{
+    height: 100px;
+    width: 150px;
+}
+
+.main-pic{
+    width: 100%;
+}
+.main-text{
+    display: block;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 20px;
+    padding-bottom: 5%;
+}
+.main-text img{
+    height: 100%;
+    width: 100%;
+}
+/** Grid (we wanted to have two divs side by side and when the width gets small enough, they go under eachother)**/
+.main-box-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    padding: 20px;
+}
+.main-box-1{
+    grid-column: 1;
+    text-align: center;
+    font-size: 20px;
+    background-color: #dcbf4e;
+    padding-bottom: 5%;
+}
+.main-box-2{
+    grid-column: 2;
+    text-align: center;
+    font-size: 20px;
+    background-color: #d58349;
+    padding-bottom: 5%;
+}
+
+@media (max-width: 1000px) {
+    .main-text {
+        display: block;
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 20px;
+        padding-bottom: 5%;
+    }
+
+    .main-box-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .main-box-1 {
+        grid-column: 1;
+        grid-row: 1; /
+    }
+
+    .main-box-2 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+}
+
+
+footer {
+    height: 180px;
+    background-color:#38726C;
+    color: #EDE7D9;
+    text-align: center;
+    font-size: 15px;
+}
