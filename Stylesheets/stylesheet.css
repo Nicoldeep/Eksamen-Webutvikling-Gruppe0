@@ -102,12 +102,17 @@ body{
         grid-row: 2;
     }
 }
-
-
+/****/
 footer {
     height: 180px;
     background-color:#38726C;
     color: #EDE7D9;
     text-align: center;
     font-size: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/**Changed the mailto link to be white since the default is dark blue and it clashes with the footer color**/
+.mailto-link{
+    color: white;
 }
