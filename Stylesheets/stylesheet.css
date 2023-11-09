@@ -79,6 +79,12 @@ body{
     height: 100%;
     width: 100%;
 }
+
+#index-reference{
+  color:black;
+}
+
+
 /** Grid (we wanted to have two divs side by side and when the width gets small enough, they go under eachother)**/
 .main-box-container{
     display: grid;
