@@ -82,36 +82,74 @@ body{
 /** Grid (we wanted to have two divs side by side and when the width gets small enough, they go under eachother)**/
 .main-box-container{
     display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 20px;
-    padding: 20px;
+    grid-gap: 0;
+    padding: 0;
+    margin-left: -15%;
+    width:130%;
+    line-height: 150px;
+}
+
+.main-box-container p{
+  line-height: 30px;
 
 }
 
-.main-box{
-    
+.main-box-container h3{
+  font-size: 40px;
 }
+
 .main-box-1{
     grid-column: 1;
+    background-color: #e7dfcc;
+    top: 50%;
     text-align: center;
     font-size: 20px;
-    background-color: #FFDC00 ;
-    
+    padding: 0px 5%;
     
 }
 .main-box-2{
     grid-column: 2;
-    text-align: center;
-    font-size: 20px;
-    background-color: rgba(255, 145, 0, 0.589)
-   
 }
+
+.main-box-3{
+  grid-column: 1;
+}
+.main-box-4{
+  grid-column: 2;
+  background-color: #f3efe6;
+  text-align: center;
+  font-size: 20px;
+  padding: 0px 5%;
+}
+
+/** Buttons */ 
+.main-box-button{
+  display: inline-block;
+  padding: 25px 50px;
+  font-size: 24px;
+  border: none;
+  border-radius: 4px;
+  background-color: #38726C;
+  color: #EDE7D9;
+  cursor: pointer;
+  text-decoration-line: none;
+  transition: 0.3s;
+  margin: 10px;
+  
+}
+
+.main-box-button:hover{
+  background-color: #002522;
+  
+}
+
+
+
 
 @media (max-width: 1000px) {
     .main-text {
         display: block;
-        padding-left: 10%;
-        padding-right: 10%;
+     
         font-size: 20px;
         padding-bottom: 5%;
     }
@@ -130,6 +168,16 @@ body{
         grid-column: 1;
         grid-row: 2;
     }
+
+    .main-box-3 {
+      grid-column: 1;
+      grid-row: 4; /
+  }
+
+  .main-box-4 {
+      grid-column: 1;
+      grid-row: 3;
+  }
 }
 
 
@@ -426,23 +474,3 @@ footer {
 }
 
 
-/** Buttons */ 
-button{
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 4px;
-    background-color: #002522;
-    color: #EDE7D9;
-    cursor: pointer;
-    text-decoration-line: none;
-    transition: 0.3s;
-    margin: 10px;
-}
-
-button:hover{
-
-    padding: 15px 30px;
-    margin: 0;
-}
