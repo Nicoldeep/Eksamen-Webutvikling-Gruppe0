@@ -16,7 +16,7 @@ body{
   
   .Links:hover {
   
-      background-color: #38726C;
+    background-color: #38726C;
     text-decoration: underline;
     text-decoration-color: black;
     text-decoration-thickness: 0.5px;
@@ -54,6 +54,12 @@ body{
     text-align: center;
     padding-top: 3%;
   }
+
+  .TekstStørrelse{
+    font-size:x-large;
+    padding: 3px;
+    padding-left: 5%;
+    }
 
 .main-pic{
     width: 100%;
