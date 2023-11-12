@@ -33,6 +33,10 @@
     .col-s-10 {width: 83.33%;}
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
+
+    div.logo img{
+        display: inline-block;
+    }
 }
 /* For desktop: when in desktop screen this selectors will override the corresponding selectors below but only the declaration */
 @media only screen and (min-width: 768px) {
@@ -48,6 +52,7 @@
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+
     div.navbar ul{
         float: right;
         padding-top: 10px;
@@ -100,8 +105,7 @@ body{
         height: auto;
         width: 30%;
     }
-.name{
-    color:black;
+.navbar{
     padding: 13px;
     padding-top: 10px;
     text-align: center;
@@ -110,19 +114,21 @@ body{
     .navbar li{
         padding: 10px;
         margin: 3px;
-        border: inset 3px #EDE7D9;
-        background-color: #A49694;
-        box-shadow: 3px 3px #EDE7D9 inset;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
     }
     .navbar li:hover{
-        background-color: rgba(0, 26, 255, 0.185);
+        background-color: #38726C;
+        text-decoration: underline;
+        text-decoration-color: #EDE7D9;
+        text-decoration-thickness: 0.3px;
     }
     .navbar a{
-        color: black;
-        font-size: 15px;
+        color: #EDE7D9;
         text-decoration: none;
+        font-size: x-large;
+        padding: 10px;
+        border-radius: 10px;
     }
 /*Row2*/
 .scroll{
@@ -200,9 +206,9 @@ body{
     }
 /*row6*/
 .footer {
+    height: 400px;
     background-color:#38726C;
     color: white;
     text-align: center;
     font-size: 15px;
-    padding: 25px;
 }   
