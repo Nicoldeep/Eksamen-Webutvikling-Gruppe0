@@ -5,16 +5,17 @@ body{
     font-family: "Quicksand", sans-serif;
     margin: 0; /*to avoid white border around webpage*/
     background-color: #EDE7D9;
+    scroll-behavior: smooth;
 }
 
 /* NAVBAR */
 
-.Links{
+.links{
     padding: 10px 20px;
     display: inline-block;
   }
 
-  .Links:hover {
+  .links:hover {
   
       background-color: #38726C;
     text-decoration: underline;
@@ -23,14 +24,14 @@ body{
 
 }
 
-  .NavTekst{
+  .nav-text{
       color:#EDE7D9;
     text-decoration: none;
     font-weight: bold;
   }
 
 
-  #Navbar{
+  .navbar{
     width: 100%;
     margin: auto;
     padding: 0px;
@@ -42,7 +43,7 @@ body{
     top: 0;
   }
 
-  #NavbarLogo{
+  .navbar-logo{
     height: 100px;
     width: 150px;
     padding-left: 20px;
