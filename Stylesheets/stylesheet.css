@@ -466,7 +466,7 @@ body{
 }
 
 
-#OverskriftWelcomePage, #OverskriftMenuPage, #OverskriftBookingPage, #OverskriftTopicalPage{
+#heading-home-page, #heading-cafeteria, #heading-library, #heading-topical{
   font-size: x-large;
 }
 
