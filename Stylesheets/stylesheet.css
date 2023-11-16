@@ -43,6 +43,16 @@ body{
     top: 0;
   }
 
+  @media (max-width: 750px){
+    .links, .navbar-logo{
+      display: grid;
+    }
+      .navbar{
+        justify-content: center;
+      }
+  }
+
+
   .navbar-logo{
     height: 100px;
     width: 150px;
@@ -156,9 +166,10 @@ body{
 
 
 @media (max-width: 1000px) {
+
+ 
     .main-text {
         display: block;
-     
         font-size: 20px;
         padding-bottom: 5%;
     }
@@ -205,9 +216,12 @@ body{
     padding-right: 3%;
   }
   
+
   
   /* Layout for the page with a smaller window size */
+
   @media screen and (max-width: 1120px) {
+  
     #cafeteria{
       display: grid;
       grid-template-columns: 100%;
@@ -273,6 +287,7 @@ body{
           font-size:x-large;
           padding: 10px;
           padding-left: 5%;
+
          
       }
   
