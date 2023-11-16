@@ -10,7 +10,7 @@ body{
 
 /* NAVBAR */
 
-.links{
+.links{ 
     padding: 10px 20px;
     display: inline-block;
   }
@@ -49,7 +49,7 @@ body{
     padding-left: 20px;
   }
 
-  /* HEADER BILDET OG HOVEDOVERSKRIFT*/
+  /* HEADER IMAGE AND HEADING*/
 
   .main-heading{
     font-size:70px;
@@ -193,7 +193,7 @@ body{
 /* CSS CAFETERIA */
 
 
-/* Layout for siden delt i grids, er delt ved divene*/
+/*Layout for the page divided into grids, divided by the dives*/
 #cafeteria{
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -206,7 +206,7 @@ body{
   }
   
   
-  /* Layout for siden med mindre størrelse på vindu */
+  /* Layout for the page with a smaller window size */
   @media screen and (max-width: 1120px) {
     #cafeteria{
       display: grid;
@@ -290,7 +290,7 @@ body{
   }
   
   
-  /* Midtstiller bildene */
+  /* Center the images */
   
   .food-image-size-center{
     display: block;
@@ -304,7 +304,7 @@ body{
     max-height: 300px;
   }
   
-  /* Midtstiller bildene */
+  /* Centers and rotates the images */
   .rotate-image-center{
     transform: rotate(90deg);
     display: block;
@@ -315,12 +315,13 @@ body{
     width: 300px;
   }
   
-  /* CSS til linje*/
+  /* CSS dividing line*/
   hr.dividing-line{
     border: 1px solid #A49694 ;
     border-radius: 1px; 
     width: 98%;
   }
+  
   
   .ingredients-text{
     font-size: larger;
@@ -335,28 +336,28 @@ body{
   font-size: 40px;
   }
   
-  /*  Retten sitt navn */
+  /*  Dish name */
   .dish-name{
   text-align: left;
   font-size: larger;
   padding-left: 1%;
   }
   
-  /* Retten sin pris */
+  /* dish price */
   .dish-price{
   float: right;
   font-size: larger;
   padding-right: 1%;
   }
   
-  /* Størrelse på emojies og posisjon*/ 
+  /* Size of emojis and position*/ 
   .size-emoji{
     font-size: x-large;
     text-decoration-color: #5C4742;
     padding-left: 1%;  
   }
   
-  /* Fjerner "underline" ved abbr*/
+  /*Removes the "underline" from the abbr*/
   abbr{
     border-bottom: none !important;
     cursor: inherit !important;
@@ -388,7 +389,7 @@ body{
       padding-left: 1%;
   }
   
-  /* Bilde av drikke */
+  /* Image of drinks */
   #cold-drinks{
     display: block;
     margin-left: auto;
