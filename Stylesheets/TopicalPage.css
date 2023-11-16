@@ -205,10 +205,35 @@ body{
         margin-bottom: 10px;
     }
 /*row6*/
-.footer {
-    height: 400px;
-    background-color:#38726C;
-    color: white;
+.footer{
+    background-color: #38726C;
+    color: #EDE7D9;
     text-align: center;
     font-size: 15px;
-}   
+    padding: 200px auto auto auto;
+}
+.footer-box-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: auto;
+    margin: auto;
+    width: 70%;
+}
+.footer-box-1, .footer-box-2, .footer-box-3, .footer-box-4 {
+    padding: 10px;
+}
+.footer-under {
+    grid-column: span 5;
+    padding: 10px;
+}
+#footer-line {
+    width: 80%;
+    display: inline-block;
+}
+.footer-links{
+    color: white;
+    text-decoration-line: none;
+}
+.footer-links:hover{
+    text-decoration-line:underline;
+}

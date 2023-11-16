@@ -10,7 +10,7 @@ body{
 
 /* NAVBAR */
 
-.links{
+.links{ 
     padding: 10px 20px;
     display: inline-block;
   }
@@ -49,7 +49,7 @@ body{
     padding-left: 20px;
   }
 
-  /* HEADER BILDET OG HOVEDOVERSKRIFT*/
+  /* HEADER IMAGE AND HEADING*/
 
   .main-heading{
     font-size:70px;
@@ -193,7 +193,7 @@ body{
 /* CSS CAFETERIA */
 
 
-/* Layout for siden delt i grids, er delt ved divene*/
+/*Layout for the page divided into grids, divided by the dives*/
 #cafeteria{
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -206,7 +206,7 @@ body{
   }
   
   
-  /* Layout for siden med mindre størrelse på vindu */
+  /* Layout for the page with a smaller window size */
   @media screen and (max-width: 1120px) {
     #cafeteria{
       display: grid;
@@ -224,19 +224,19 @@ body{
     }
   
   
-    hr.Skillelinje{
+    hr.dividing-line{
     
       border: 1px solid #A49694;
       border-radius: 1px; 
       width: auto;
     }
-    .IngredienserTekst{
+    .ingredients-text{
       font-size: larger;
       padding-left: 1%;
     }
   
   
-    .MatBilderStørrelserOgMidtstill{
+    .food-image-size-center{
       display: block;
       margin-left: auto;
       margin-right: auto;
@@ -249,7 +249,7 @@ body{
     }
     
     
-    .RotereBildetOgMidtstille{
+    .rotate-image-center{
       transform: rotate(90deg);
       display: block;
       margin-left: auto;
@@ -259,7 +259,7 @@ body{
       width: 100px;
     }
   
-    .typeRett{
+    .dish-type{
       display: block;
       margin-left: auto;
       margin-right: auto;
@@ -269,14 +269,14 @@ body{
       font-size: 40px;
       }
   
-        .TekstStørrelse{
+        .text-size{
           font-size:x-large;
           padding: 10px;
           padding-left: 5%;
          
       }
   
-      #ColdDrinks{
+      #cold-drinks{
           display: block;
           margin-left: auto;
           margin-right: auto;
@@ -290,9 +290,9 @@ body{
   }
   
   
-  /* Midtstiller bildene */
+  /* Center the images */
   
-  .MatBilderStørrelserOgMidtstill{
+  .food-image-size-center{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -304,8 +304,8 @@ body{
     max-height: 300px;
   }
   
-  /* Midtstiller bildene */
-  .RotereBildetOgMidtstille{
+  /* Centers and rotates the images */
+  .rotate-image-center{
     transform: rotate(90deg);
     display: block;
     margin-left: auto;
@@ -315,48 +315,49 @@ body{
     width: 300px;
   }
   
-  /* CSS til linje*/
-  hr.Skillelinje{
+  /* CSS dividing line*/
+  hr.dividing-line{
     border: 1px solid #A49694 ;
     border-radius: 1px; 
     width: 98%;
   }
   
-  .IngredienserTekst{
+  
+  .ingredients-text{
     font-size: larger;
     padding-left: 1%;
   }
   
   /* Starter, Mains or Deserts */
-  .typeRett{
+  .dish-type{
   text-align: left;
   font-weight: bold;
   font-family: Quicksand;
   font-size: 40px;
   }
   
-  /*  Retten sitt navn */
-  .RettNavn{
+  /*  Dish name */
+  .dish-name{
   text-align: left;
   font-size: larger;
   padding-left: 1%;
   }
   
-  /* Retten sin pris */
-  .RettPris{
+  /* dish price */
+  .dish-price{
   float: right;
   font-size: larger;
   padding-right: 1%;
   }
   
-  /* Størrelse på emojies og posisjon*/ 
-  .SizeEmoji{
+  /* Size of emojis and position*/ 
+  .size-emoji{
     font-size: x-large;
     text-decoration-color: #5C4742;
     padding-left: 1%;  
   }
   
-  /* Fjerner "underline" ved abbr*/
+  /*Removes the "underline" from the abbr*/
   abbr{
     border-bottom: none !important;
     cursor: inherit !important;
@@ -364,32 +365,32 @@ body{
   }
   
   /* Drinks */
-  .PrisDrikke{
+  .price-drink{
   float: right;
   border-left: 2px solid #5C4742;
   font-style: oblique;
   }
   
-  .DrikkeNavn{
+  .drink-name{
   float: left;
   font-style: unset;
   padding-left: 1%;
   }
   
-  #PrisOverskrift{
+  #price-heading{
     float: right;
     font-style: unset;
     font-size: larger;
   }
   
-  #DrikkeOverskrift{
+  #drink-heading{
       text-align: left;
       font-size: larger;
       padding-left: 1%;
   }
   
-  /* Bilde av drikke */
-  #ColdDrinks{
+  /* Image of drinks */
+  #cold-drinks{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -466,7 +467,7 @@ body{
 }
 
 
-#OverskriftWelcomePage, #OverskriftMenuPage, #OverskriftBookingPage, #OverskriftTopicalPage{
+#heading-home-page, #heading-cafeteria, #heading-library, #heading-topical{
   font-size: x-large;
 }
 
@@ -495,13 +496,8 @@ body{
     }
 }
 
-hr.Skillelinje{
-  border: 1px solid #A49694 ;
-  border-radius: 1px; 
-  width: 95%;
-}
 
-.TekstInnhold{
+.text-content{
   width: 95; 
   font-size: large 
 }
