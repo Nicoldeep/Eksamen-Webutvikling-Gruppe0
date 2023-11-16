@@ -43,6 +43,16 @@ body{
     top: 0;
   }
 
+  @media (max-width: 750px){
+    .links, .navbar-logo{
+      display: grid;
+    }
+      .navbar{
+        justify-content: center;
+      }
+  }
+
+
   .navbar-logo{
     height: 100px;
     width: 150px;
