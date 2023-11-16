@@ -224,19 +224,19 @@ body{
     }
   
   
-    hr.Skillelinje{
+    hr.dividing-line{
     
       border: 1px solid #A49694;
       border-radius: 1px; 
       width: auto;
     }
-    .IngredienserTekst{
+    .ingredients-text{
       font-size: larger;
       padding-left: 1%;
     }
   
   
-    .MatBilderStørrelserOgMidtstill{
+    .food-image-size-center{
       display: block;
       margin-left: auto;
       margin-right: auto;
@@ -249,7 +249,7 @@ body{
     }
     
     
-    .RotereBildetOgMidtstille{
+    .rotate-image-center{
       transform: rotate(90deg);
       display: block;
       margin-left: auto;
@@ -259,7 +259,7 @@ body{
       width: 100px;
     }
   
-    .typeRett{
+    .dish-type{
       display: block;
       margin-left: auto;
       margin-right: auto;
@@ -269,14 +269,14 @@ body{
       font-size: 40px;
       }
   
-        .TekstStørrelse{
+        .text-size{
           font-size:x-large;
           padding: 10px;
           padding-left: 5%;
          
       }
   
-      #ColdDrinks{
+      #cold-drinks{
           display: block;
           margin-left: auto;
           margin-right: auto;
@@ -292,7 +292,7 @@ body{
   
   /* Midtstiller bildene */
   
-  .MatBilderStørrelserOgMidtstill{
+  .food-image-size-center{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -305,7 +305,7 @@ body{
   }
   
   /* Midtstiller bildene */
-  .RotereBildetOgMidtstille{
+  .rotate-image-center{
     transform: rotate(90deg);
     display: block;
     margin-left: auto;
@@ -316,7 +316,7 @@ body{
   }
   
   /* CSS til linje*/
-  hr.Skillelinje{
+  hr.dividing-line{
     border: 1px solid #A49694 ;
     border-radius: 1px; 
     width: 98%;
@@ -343,14 +343,14 @@ body{
   }
   
   /* Retten sin pris */
-  .RettPris{
+  .dish-price{
   float: right;
   font-size: larger;
   padding-right: 1%;
   }
   
   /* Størrelse på emojies og posisjon*/ 
-  .SizeEmoji{
+  .size-emoji{
     font-size: x-large;
     text-decoration-color: #5C4742;
     padding-left: 1%;  
@@ -364,32 +364,32 @@ body{
   }
   
   /* Drinks */
-  .PrisDrikke{
+  .price-drink{
   float: right;
   border-left: 2px solid #5C4742;
   font-style: oblique;
   }
   
-  .DrikkeNavn{
+  .drink-name{
   float: left;
   font-style: unset;
   padding-left: 1%;
   }
   
-  #PrisOverskrift{
+  #price-heading{
     float: right;
     font-style: unset;
     font-size: larger;
   }
   
-  #DrikkeOverskrift{
+  #drink-heading{
       text-align: left;
       font-size: larger;
       padding-left: 1%;
   }
   
   /* Bilde av drikke */
-  #ColdDrinks{
+  #cold-drinks{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -495,7 +495,7 @@ body{
     }
 }
 
-hr.Skillelinje{
+hr.dividing-line{
   border: 1px solid #A49694 ;
   border-radius: 1px; 
   width: 95%;
