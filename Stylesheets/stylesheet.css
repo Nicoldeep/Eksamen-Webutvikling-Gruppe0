@@ -322,13 +322,13 @@ body{
     width: 98%;
   }
   
-  .IngredienserTekst{
+  .ingredients-text{
     font-size: larger;
     padding-left: 1%;
   }
   
   /* Starter, Mains or Deserts */
-  .typeRett{
+  .dish-type{
   text-align: left;
   font-weight: bold;
   font-family: Quicksand;
@@ -336,7 +336,7 @@ body{
   }
   
   /*  Retten sitt navn */
-  .RettNavn{
+  .dish-name{
   text-align: left;
   font-size: larger;
   padding-left: 1%;
