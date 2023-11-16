@@ -465,7 +465,7 @@ body{
     }
 }
 /* For desktop: when in desktop screen this selectors will override the corresponding selectors below but only the declaration */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 751px) {
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
     .col-3 {width: 25%;}
@@ -495,7 +495,7 @@ body{
 }
 /* To change placement of scroll and title when we arent at desktop screen,
     might be confusing why this happened if we were supposed to be building for mobile screen first but we weren't at the beginning so this was the solution to fix the problem*/
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 750px){
     .row2{
         display: inline-flex;
         flex-direction: column-reverse;
@@ -504,6 +504,16 @@ body{
         font-size: 30px;
         text-align: center;
         padding: 15px;
+    }
+    .row1{
+          display: flex;
+          justify-content: center;
+      }
+    .toplogo{
+        margin: auto;
+    }
+    .topnavbar ul{
+        text-align: left;
     }
 }
 /*All selectors below are coded with the intention of making mobile screen view priority,
@@ -698,7 +708,7 @@ footer {
 .footer-box-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding:auto;
+    padding: auto;
     margin:0px auto;
     width: 70%;
 }
@@ -714,7 +724,7 @@ footer {
 
 #footer-line {
     width: 80%;
-    
+    display: inline-flex;
 }
 
 @media (max-width: 1000px) {
