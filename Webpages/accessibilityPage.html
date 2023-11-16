@@ -7,7 +7,7 @@
         
         <title>Accessibility Page</title>
 
-        <link rel="stylesheet" href="../Stylesheets/AccessibilityPage.css">
+      
         <link rel="stylesheet" href="../Stylesheets/stylesheet.css">
     </head>
 
@@ -16,41 +16,42 @@
 
       <header>
         <nav>
-            <span id="Navbar">  
+            <span class="navbar">  
                 <a href="index.html">
-                    <img id="NavbarLogo" alt="ResturantLogo" src="../Pictures/oslometLogo.png">
+                    <img class="navbar-logo" alt="ResturantLogo" src="../Pictures/oslometLogo.png">
                      <!-- Picture taken from https://www.svgrepo.com/svg/9389/fork-plate-knife, auther unknown -->
                 </a>
 
-                <ul class="TekstStørrelse">  
-                    <li class="Links"><a href="index.html" class="NavTekst"> Home </a> </li>         
-                    <li class="Links"><a href="cafeteria.html" class="NavTekst"> Cafeteria </a> </li>
-                    <li class="Links"><a href="library.html" class="NavTekst"> Univerisity Library </a> </li>
-                    <li class="Links"><a href="topicalPage.html" class="NavTekst"> Topical page</a> </li>
-                    <li class="Links"><a href="accessibilityPage.html" class="NavTekst"> Accessibility page</a> </li>
+                <ul class="text-size">  
+                    <li class="links"><a href="index.html" class="nav-text"> Home </a> </li>         
+                    <li class="links"><a href="cafeteria.html" class="nav-text"> Cafeteria </a> </li>
+                    <li class="links"><a href="library.html" class="nav-text"> Univerisity Library </a> </li>
+                    <li class="links"><a href="topicalPage.html" class="nav-text"> Topical page</a> </li>
+                    <li class="links"><a href="accessibilityPage.html" class="nav-text"> Accessibility page</a> </li>
                 </ul>
             </span>
         </nav>
         
     </header> 
 
-        <h1 id="HovedOverskrift">
+        <h1 class="main-heading">
                 ACCESSIBILITY PAGE - Blir fikset på slutten. Når alle sider er ferdig!!!
         </h1>
 
 
         <br><br>
 
-    <main>
+    <main id="accessibility">
+        
         <div id="OverskriftWelcomePage">
             <span>
-                Welcome-Page
-                    <hr class="Skillelinje">
+                Home-Page
+                    <hr class="dividing-line">
             </span>
 
             <br>
 
-            <span class="TekstInnhold">
+            <span class="text-content">
                 The way we designed the welcome page we did so with the intend to make it easy to navigate with the header and buttons. General info about the restaurant in the footer. <br>
                 We deliberatly chose to use these colors to make it easy on the eyes and readable with text contrasting the background. And making the background colors match to make it visually pleasing.
             </span>
@@ -58,53 +59,105 @@
 
         <div id="OverskriftMenuPage">
             <span>
-                Menu
-                <hr class="Skillelinje">
+                Cafeteria
+                <hr class="dividing-line">
             </span>
 
             <br>
 
-            <span class="TekstInnhold">
+            <span class="text-content">
                 In our menu, accessibility and universal design are factors that have been taken care off, because we believe that everyone should be taken into account! Good contrasts in all of our text will help users with impaired vision. Ingredients in the food are one of the most important things for users to know, in our menu the allergens are informed with emojis/Figure, so that you can know about allergens even if you cannot read. By hovering over, the allergens come up as text as well. All images have an alternative text. The site has access to zoom functions to read text better and in general the menu is very simple and has a clear layout so that you can easily see the dish, the price, and you can get valuable information about the content and allergens. "WAVE web accessibility tool" helped ensuring this.
             </span>
         </div>
 
         <div id="OverskriftBookingPage">
             <span>
-                Booking-Page
-                    <hr class="Skillelinje">
+                Libraries
+                    <hr class="dividing-line">
             </span>
 
             <br>
 
-            <span class="TekstInnhold">
-                In the booking page we used appropriate headers to convey information in a structured manner, in addition to bold text to highlight the most important info, which could be helpful for those with visual impairments. Propper form labels were used in case the user uses a screen reader and needs additional information on what to write in the form. For a bit of contast in the page, we used a vibrant background for the form, so it's easier to find where to book a table. Scalability is important for us, so that the website doesn't lose any integrity when accessed via phone, because some may not have access to a computer. In case the user has problems loading in the header photo or website logo, we do provide an alternative text.
+            <span class="text-content">
+                To make the library page accsessible i chose to not put all the text not too close together. Making it easier to read, and therefore making it more acsessible.
+                Also making sure that everything that images have alternatives for page readers to read is important to make the website acsessible.
+                Bright and contrastet colors make the page easier to navigate. It helps to have a clear seperation between the header, main body and the footer.
             </span>
         </div>
 
         <div id="OverskriftTopicalPage">
             <span>
                 Topical-Page
-                    <hr class="Skillelinje">
+                    <hr class="dividing-line">
             </span>
 
             <br>
 
-            <span class="TekstInnhold">
+            <span class="text-content">
                 This page was designed with the focus off mobile screen use, and then overrided elements with different breakpoints so it could expand to tablets and desktops too and still look good. We wanted to make it possible to get clear information regardless the device used. Implementing videoes for the topics to make it more user friendly. (The information are just different topics we have written about, it doesnt have a flow.)
             </span>
         </div>
     </main>
 
-    <footer>
-        <br>
-            <p> Opening hours: 10:00 AM - 10:00 PM, Mon-Sun<br>
-                Adress: Osloveien123, 1234 Oslo <br><br>
-               
-                Contactinfo:<br>
-                Tlf: 12345678<br>
-                E-mail: ThisDoNotExist@somewhere.com
-             </p> 
-    </footer>
+      <!-- Footer with relevant information-->
+      <footer>
+
+        <div class="footer-box-container">
+            
+            <div class="footer-box-1">
+                <h1>Studies</h1>
+                <p>
+                    Bachelor's programmes in English <br>
+                    For exchange students<br>
+                    Courses<br>
+                    Phd opportunities<br>
+                </p>
+            </div>
+
+            <div class="footer-box-2">
+                <h1>Services</h1>
+                <p>
+                    For Students <br>
+                    For Employees <br>
+                </p>
+            </div>
+
+            <div class="footer-box-3">
+                <h1>Contact</h1>
+                <p>
+                    Contact us <br>
+                    Find Employees <br>
+                    Press contact <br>
+                </p>
+            </div>
+
+
+            <div class="footer-box-4">
+                <h1>Social Media</h1>
+                <p>
+                    Instagram<br>
+                    Facebook<br>
+                    LinkedIn <br>
+                </p>
+                
+            </div>
+
+        </div>
+
+        <hr id="footer-line">
+
+            <div class="footer-under">
+                <p>Opening hours: 10:00 AM - 10:00 PM, Mon-Fri</p>
+                <p>Contact info:</p>
+                <address>
+                    <p>Tlf: <a href="tel: 41 23 12 34" class="footer-links">41 23 12 34</a> </p>
+                    <p>E-mail: <a href="mailto:Oslomet@somewhere.com" class="footer-links">Oslomet@somewhere.com</a></p>
+                    <p>Address: Pilestredet 32, 1234 Oslo</p>
+                </address>
+
+            </div>
+
+        
+</footer> 
 </body>
 </html>

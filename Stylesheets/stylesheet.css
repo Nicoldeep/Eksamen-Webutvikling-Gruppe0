@@ -5,16 +5,17 @@ body{
     font-family: "Quicksand", sans-serif;
     margin: 0; /*to avoid white border around webpage*/
     background-color: #EDE7D9;
+    scroll-behavior: smooth;
 }
 
 /* NAVBAR */
 
-.Links{
+.links{
     padding: 10px 20px;
     display: inline-block;
   }
 
-  .Links:hover {
+  .links:hover {
   
       background-color: #38726C;
     text-decoration: underline;
@@ -23,15 +24,14 @@ body{
 
 }
 
-
-  .NavTekst{
+  .nav-text{
       color:#EDE7D9;
     text-decoration: none;
     font-weight: bold;
   }
 
 
-  #Navbar{
+  .navbar{
     width: 100%;
     margin: auto;
     padding: 0px;
@@ -43,7 +43,7 @@ body{
     top: 0;
   }
 
-  #NavbarLogo{
+  .navbar-logo{
     height: 100px;
     width: 150px;
     padding-left: 20px;
@@ -51,17 +51,20 @@ body{
 
   /* HEADER BILDET OG HOVEDOVERSKRIFT*/
 
-  #HovedOverskrift{
+  .main-heading{
     font-size:70px;
     text-align: center;
     padding-top: 3%;
   }
 
-  .TekstStørrelse{
+  .text-size{
     font-size:x-large;
     padding: 3px;
     padding-left: 5%;
     }
+
+
+
 
 
  /* CSS INDEX.HTML */
@@ -221,19 +224,19 @@ body{
     }
   
   
-    hr.Skillelinje{
+    hr.dividing-line{
     
       border: 1px solid #A49694;
       border-radius: 1px; 
       width: auto;
     }
-    .IngredienserTekst{
+    .ingredients-text{
       font-size: larger;
       padding-left: 1%;
     }
   
   
-    .MatBilderStørrelserOgMidtstill{
+    .food-image-size-center{
       display: block;
       margin-left: auto;
       margin-right: auto;
@@ -246,7 +249,7 @@ body{
     }
     
     
-    .RotereBildetOgMidtstille{
+    .rotate-image-center{
       transform: rotate(90deg);
       display: block;
       margin-left: auto;
@@ -256,7 +259,7 @@ body{
       width: 100px;
     }
   
-    .typeRett{
+    .dish-type{
       display: block;
       margin-left: auto;
       margin-right: auto;
@@ -266,14 +269,14 @@ body{
       font-size: 40px;
       }
   
-        .TekstStørrelse{
+        .text-size{
           font-size:x-large;
           padding: 10px;
           padding-left: 5%;
          
       }
   
-      #ColdDrinks{
+      #cold-drinks{
           display: block;
           margin-left: auto;
           margin-right: auto;
@@ -289,7 +292,7 @@ body{
   
   /* Midtstiller bildene */
   
-  .MatBilderStørrelserOgMidtstill{
+  .food-image-size-center{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -302,7 +305,7 @@ body{
   }
   
   /* Midtstiller bildene */
-  .RotereBildetOgMidtstille{
+  .rotate-image-center{
     transform: rotate(90deg);
     display: block;
     margin-left: auto;
@@ -313,19 +316,19 @@ body{
   }
   
   /* CSS til linje*/
-  hr.Skillelinje{
+  hr.dividing-line{
     border: 1px solid #A49694 ;
     border-radius: 1px; 
     width: 98%;
   }
   
-  .IngredienserTekst{
+  .ingredients-text{
     font-size: larger;
     padding-left: 1%;
   }
   
   /* Starter, Mains or Deserts */
-  .typeRett{
+  .dish-type{
   text-align: left;
   font-weight: bold;
   font-family: Quicksand;
@@ -333,21 +336,21 @@ body{
   }
   
   /*  Retten sitt navn */
-  .RettNavn{
+  .dish-name{
   text-align: left;
   font-size: larger;
   padding-left: 1%;
   }
   
   /* Retten sin pris */
-  .RettPris{
+  .dish-price{
   float: right;
   font-size: larger;
   padding-right: 1%;
   }
   
   /* Størrelse på emojies og posisjon*/ 
-  .SizeEmoji{
+  .size-emoji{
     font-size: x-large;
     text-decoration-color: #5C4742;
     padding-left: 1%;  
@@ -361,32 +364,32 @@ body{
   }
   
   /* Drinks */
-  .PrisDrikke{
+  .price-drink{
   float: right;
   border-left: 2px solid #5C4742;
   font-style: oblique;
   }
   
-  .DrikkeNavn{
+  .drink-name{
   float: left;
   font-style: unset;
   padding-left: 1%;
   }
   
-  #PrisOverskrift{
+  #price-heading{
     float: right;
     font-style: unset;
     font-size: larger;
   }
   
-  #DrikkeOverskrift{
+  #drink-heading{
       text-align: left;
       font-size: larger;
       padding-left: 1%;
   }
   
   /* Bilde av drikke */
-  #ColdDrinks{
+  #cold-drinks{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -422,8 +425,81 @@ body{
 /* CSS ACCESSIBILITY PAGE*/
 
 
+/* Fikser lauout for litt mindre størrelse på vindu */
+@media screen and (max-width: 1120px){
+  #accessibility {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto;
+      grid-row-gap: 40px;
+      
+  
+      padding-left: 2%;
+      padding-right: 3%;
+  
+      margin-right: auto;
+      margin-left: auto;
+      
+    }
+}
+
+/* Fikser layout for siden */
+#accessibility{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto;
+  grid-row-gap: 15px;
+  grid-column-gap: 10px;
+
+  
+  margin-left: auto;
+  margin-right: auto;
 
 
+  padding-right: 3%;
+  padding-left: 1%;
+
+  text-align: center;
+  
+
+  padding-bottom:4%;
+}
+
+
+#OverskriftWelcomePage, #OverskriftMenuPage, #OverskriftBookingPage, #OverskriftTopicalPage{
+  font-size: x-large;
+}
+
+
+/* Fikser layout for liten størrelse på vindu */
+@media screen and (max-width: 600px){
+    #accessibility{
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: auto;
+      grid-row-gap: 40px;
+      
+  
+      padding-left: 2%;
+      padding-right: 3%;
+  
+      margin-right: auto;
+      margin-left: auto;
+      
+    }
+
+    #HovedOverskrift{
+      font-size:60px;
+      text-align: center;
+      padding-top: 3%;
+    }
+}
+
+
+.text-content{
+  width: 95; 
+  font-size: large 
+}
 
 
 
