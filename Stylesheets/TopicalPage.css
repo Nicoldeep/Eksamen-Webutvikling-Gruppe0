@@ -215,8 +215,8 @@ body{
 .footer-box-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding:auto;
-    margin:0px auto;
+    padding: auto;
+    margin: auto;
     width: 70%;
 }
 .footer-box-1, .footer-box-2, .footer-box-3, .footer-box-4 {
