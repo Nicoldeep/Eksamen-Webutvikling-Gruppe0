@@ -495,13 +495,8 @@ body{
     }
 }
 
-hr.dividing-line{
-  border: 1px solid #A49694 ;
-  border-radius: 1px; 
-  width: 95%;
-}
 
-.TekstInnhold{
+.text-content{
   width: 95; 
   font-size: large 
 }
