@@ -428,12 +428,6 @@ body{
 
 
 /* CSS TOPICAL PAGE*/
-/* selector used to give same style to all elements unless overwritten */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 /*to prevent elements to flow over the 'rows'*/
 .row::after {
     content: "";
@@ -480,7 +474,7 @@ body{
     .col-12 {width: 100%;}
 
     div.topnavbar ul{
-        float: right;
+        text-align: right;
     }
     div.topnavbar li{
         display: inline-block;
@@ -581,6 +575,7 @@ body{
 .information{
     background-color: #e7dcc1;
     padding: 40px;
+    line-height: 1.8;
 }
 .page{
     padding-bottom: 20px;
@@ -593,6 +588,7 @@ body{
     padding: 10px;
     padding-left: 20px;
     background-color: #e7dcc1;
+    line-height: 1.8;
 }
 /*row5*/
 .row5 .page{

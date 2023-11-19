@@ -8,8 +8,12 @@
         <title>Topical Page</title>
 
         <link rel="stylesheet" href="../Stylesheets/stylesheet.css">
+        <!--We have this code here because of box-sizing which messed up the other sites, box-sizing was used to include padding and border in the element's total height and width. Which was only taken an account for on this site-->
         <style>
-            html {
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
                 scroll-behavior: smooth;
             }
         </style>
