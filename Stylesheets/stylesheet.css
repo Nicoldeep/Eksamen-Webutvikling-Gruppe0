@@ -631,7 +631,7 @@ hr{
 /* Fikser layout for siden */
 #accessibility{
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: 33% 33% 33%;
   grid-template-rows: auto;
   grid-row-gap: 15px;
   grid-column-gap: 10px;
@@ -744,8 +744,6 @@ footer {
     }
 
 }
-
-
     /**Changed the mailto link to be white since the default is dark blue and it clashes with the footer color**/
 .footer-links{
     color: white;
