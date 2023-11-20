@@ -1,7 +1,8 @@
 /*Importing font we want to use*/
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
-body{
+/*General style for all pages */
+body {
     font-family: "Quicksand", sans-serif;
     margin: 0; /*to avoid white border around webpage*/
     background-color: #EDE7D9;
@@ -9,29 +10,29 @@ body{
 }
 
 /* NAVBAR */
-
-.links{ 
+/*Padding and display for used links unless overwritten*/
+.links {
     padding: 10px 20px;
     display: inline-block;
-  }
+}
 
-  .links:hover {
-  
-      background-color: #38726C;
+/*Upon hover background and underline changes*/
+.links:hover {
+    background-color: #3b7872FF;
     text-decoration: underline;
     text-decoration-color: #EDE7D9;
     text-decoration-thickness: 0.5px;
-
 }
 
-  .nav-text{
-      color:#EDE7D9;
+/*Appropriate color and font for link text*/
+.nav-text {
+    color: #EDE7D9;
     text-decoration: none;
     font-weight: bold;
-  }
+}
 
-
-  .navbar{
+/*Appropriate sizing and styling of navbar*/
+.navbar {
     width: 100%;
     margin: auto;
     padding: 0px;
@@ -41,130 +42,132 @@ body{
     background-color: #38726C;
     position: sticky;
     top: 0;
-  }
+}
 
-  @media (max-width: 750px){
-    .links, .navbar-logo{
-      display: grid;
+/*Override sizing for phone display when it comes to navbar*/
+@media (max-width: 750px) {
+    .links, .navbar-logo {
+        display: grid;
     }
-      .navbar{
+
+    .navbar {
         justify-content: center;
-      }
-  }
+    }
+}
 
-
-  .navbar-logo{
+/*Sizing for the link logo to fit navbar*/
+.navbar-logo {
     height: 100px;
     width: 150px;
     padding-left: 20px;
-  }
+}
 
-  /* HEADER IMAGE AND HEADING*/
-
-  .main-heading{
-    font-size:70px;
+/* HEADER IMAGE AND HEADING*/
+/*Appropriate text size and style*/
+.main-heading {
+    font-size: 70px;
     text-align: center;
     padding-top: 3%;
-  }
+}
 
-  .text-size{
-    font-size:x-large;
+/*Visibility of links*/
+.text-size {
+    font-size: x-large;
     padding: 3px;
     padding-left: 5%;
-    }
+}
 
-
- /* CSS INDEX.HTML */
-.main-pic{
+/* CSS INDEX.HTML */
+/*Picture set to span whole width*/
+.main-pic {
     width: 100%;
 }
-.main-text{
+
+/*Text centered with space on both sides*/
+.main-text {
     display: block;
     padding-left: 20%;
     padding-right: 20%;
     font-size: 20px;
     padding-bottom: 5%;
 }
-.main-text img{
+
+/*Sizing set for images in main-text*/
+.main-text img {
     height: 100%;
     width: 100%;
 }
 
-.index-reference{
-  color:black;
+/*COLOUR BLACK*/
+.index-reference {
+    color: black;
 }
 
-
 /** Grid (we wanted to have two divs side by side and when the width gets small enough, they go under eachother)**/
-.main-box-container{
+.main-box-container {
     display: grid;
     grid-gap: 0;
     padding: 0;
     margin-left: -15%;
-    width:130%;
+    width: 130%;
     line-height: 150px;
 }
 
-.main-box-container p{
-  line-height: 30px;
-
+.main-box-container p {
+    line-height: 30px;
 }
 
-.main-box-container h3{
-  font-size: 40px;
+.main-box-container h3 {
+    font-size: 40px;
 }
 
-.main-box-1{
+.main-box-1 {
     grid-column: 1;
     background-color: #e7dfcc;
     top: 50%;
     text-align: center;
     font-size: 20px;
     padding: 0px 5%;
-    
 }
-.main-box-2{
+
+.main-box-2 {
     grid-column: 2;
 }
 
-.main-box-3{
-  grid-column: 1;
-}
-.main-box-4{
-  grid-column: 2;
-  background-color: #f3efe6;
-  text-align: center;
-  font-size: 20px;
-  padding: 0px 5%;
+.main-box-3 {
+    grid-column: 1;
 }
 
-/** Buttons */ 
-.main-box-button{
-  display: inline-block;
-  padding: 25px 50px;
-  font-size: 24px;
-  border: none;
-  border-radius: 4px;
-  background-color: #38726C;
-  color: #EDE7D9;
-  cursor: pointer;
-  text-decoration-line: none;
-  transition: 0.3s;
-  margin: 10px;
-  
+.main-box-4 {
+    grid-column: 2;
+    background-color: #f3efe6;
+    text-align: center;
+    font-size: 20px;
+    padding: 0px 5%;
 }
 
-.main-box-button:hover{
-  background-color: #002522;
-  
+/** Buttons */
+/*Display grid buttons on index for cafteria and library*/
+.main-box-button {
+    display: inline-block;
+    padding: 25px 50px;
+    font-size: 24px;
+    border: none;
+    border-radius: 4px;
+    background-color: #38726C;
+    color: #EDE7D9;
+    cursor: pointer;
+    text-decoration-line: none;
+    transition: 0.3s;
+    margin: 10px;
 }
 
+.main-box-button:hover {
+    background-color: #002522;
+}
 
-
-
+/*Tablet and phone sizing for grid boxes used in html*/
 @media (max-width: 1000px) {
-
- 
     .main-text {
         display: block;
         font-size: 20px;
@@ -178,7 +181,8 @@ body{
 
     .main-box-1 {
         grid-column: 1;
-        grid-row: 1; /
+        grid-row: 1;
+    /
     }
 
     .main-box-2 {
@@ -187,124 +191,109 @@ body{
     }
 
     .main-box-3 {
-      grid-column: 1;
-      grid-row: 4; /
-  }
+        grid-column: 1;
+        grid-row: 4;
+    /
+    }
 
-  .main-box-4 {
-      grid-column: 1;
-      grid-row: 3;
-  }
+    .main-box-4 {
+        grid-column: 1;
+        grid-row: 3;
+    }
 }
 
-
 /* CSS CAFETERIA */
-
-
 /*Layout for the page divided into grids, divided by the dives*/
-#cafeteria{
+#cafeteria {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: auto;
     grid-row-gap: 15px;
     grid-column-gap: 1%;
-  
     padding-left: 2%;
     padding-right: 3%;
-  }
-  
+}
 
-  
-  /* Layout for the page with a smaller window size */
+/* Layout for the page with a smaller window size */
+@media screen and (max-width: 1120px) {
+    #cafeteria {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-row-gap: 40px;
 
-  @media screen and (max-width: 1120px) {
-  
-    #cafeteria{
-      display: grid;
-      grid-template-columns: 100%;
-      grid-template-rows: auto;
-      grid-row-gap: 40px;
-      
-  
-      padding-left: 2%;
-      padding-right: 3%;
-  
-      margin-right: auto;
-      margin-left: auto;
-      width: 70%;
-    }
-  
-  
-    hr.dividing-line{
-    
-      border: 1px solid #A49694;
-      border-radius: 1px; 
-      width: auto;
-    }
-    .ingredients-text{
-      font-size: larger;
-      padding-left: 1%;
-    }
-  
-  
-    .food-image-size-center{
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-      border-radius: 6px;
-      min-width: 150px;
-      min-height: 100px;
-      max-width: 150px;
-      max-height: 100px;
-    }
-    
-    
-    .rotate-image-center{
-      transform: rotate(90deg);
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-      height: 100px;
-      width: 100px;
-    }
-  
-    .dish-type{
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-      font-weight: bold;
-      font-family: Quicksand;
-      font-size: 40px;
-      }
-  
-        .text-size{
-          font-size:x-large;
-          padding: 10px;
-          padding-left: 5%;
+        padding-left: 2%;
+        padding-right: 3%;
 
-         
-      }
-  
-      #cold-drinks{
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-          width: 50%;
-          border-radius: 6px;
-          min-width: 150px;
-          min-height: 100px;
-          max-width: 150px;
-          max-height: 100px;
-        }
-  }
-  
-  
-  /* Center the images */
-  
-  .food-image-size-center{
+        margin-right: auto;
+        margin-left: auto;
+        width: 70%;
+    }
+
+    hr.dividing-line {
+        border: 1px solid #A49694;
+        border-radius: 1px;
+        width: auto;
+    }
+
+    .ingredients-text {
+        font-size: larger;
+        padding-left: 1%;
+    }
+
+    .food-image-size-center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        border-radius: 6px;
+        min-width: 150px;
+        min-height: 100px;
+        max-width: 150px;
+        max-height: 100px;
+    }
+
+    .rotate-image-center {
+        transform: rotate(90deg);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        height: 100px;
+        width: 100px;
+    }
+
+    .dish-type {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        font-weight: bold;
+        font-family: Quicksand;
+        font-size: 40px;
+    }
+
+    .text-size {
+        font-size: x-large;
+        padding: 10px;
+        padding-left: 5%;
+    }
+
+    #cold-drinks {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        border-radius: 6px;
+        min-width: 150px;
+        min-height: 100px;
+        max-width: 150px;
+        max-height: 100px;
+    }
+}
+
+/* Center the images */
+.food-image-size-center {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -314,10 +303,10 @@ body{
     min-height: 300px;
     max-width: 350px;
     max-height: 300px;
-  }
-  
-  /* Centers and rotates the images */
-  .rotate-image-center{
+}
+
+/* Centers and rotates the images */
+.rotate-image-center {
     transform: rotate(90deg);
     display: block;
     margin-left: auto;
@@ -325,84 +314,83 @@ body{
     width: 50%;
     height: 300px;
     width: 300px;
-  }
-  
-  /* CSS dividing line*/
-  hr.dividing-line{
-    border: 1px solid #A49694 ;
-    border-radius: 1px; 
+}
+
+/* CSS dividing line*/
+hr.dividing-line {
+    border: 1px solid #A49694;
+    border-radius: 1px;
     width: 98%;
-  }
-  
-  
-  .ingredients-text{
+}
+
+.ingredients-text {
     font-size: larger;
     padding-left: 1%;
-  }
-  
-  /* Starter, Mains or Deserts */
-  .dish-type{
-  text-align: left;
-  font-weight: bold;
-  font-family: Quicksand;
-  font-size: 40px;
-  }
-  
-  /*  Dish name */
-  .dish-name{
-  text-align: left;
-  font-size: larger;
-  padding-left: 1%;
-  }
-  
-  /* dish price */
-  .dish-price{
-  float: right;
-  font-size: larger;
-  padding-right: 1%;
-  }
-  
-  /* Size of emojis and position*/ 
-  .size-emoji{
+}
+
+/* Starter, Mains or Deserts */
+.dish-type {
+    text-align: left;
+    font-weight: bold;
+    font-family: Quicksand;
+    font-size: 40px;
+}
+
+/*  Dish name */
+.dish-name {
+    text-align: left;
+    font-size: larger;
+    padding-left: 1%;
+}
+
+/* dish price */
+.dish-price {
+    float: right;
+    font-size: larger;
+    padding-right: 1%;
+}
+
+/* Size of emojis and position*/
+.size-emoji {
     font-size: x-large;
     text-decoration-color: #5C4742;
-    padding-left: 1%;  
-  }
-  
-  /*Removes the "underline" from the abbr*/
-  abbr{
+    padding-left: 1%;
+}
+
+/*Removes the "underline" from the abbr*/
+abbr {
     border-bottom: none !important;
     cursor: inherit !important;
     text-decoration: none !important;
-  }
-  
-  /* Drinks */
-  .price-drink{
-  float: right;
-  border-left: 2px solid #5C4742;
-  font-style: oblique;
-  }
-  
-  .drink-name{
-  float: left;
-  font-style: unset;
-  padding-left: 1%;
-  }
-  
-  #price-heading{
+}
+
+/* Drinks */
+.price-drink {
+    float: right;
+    border-left: 2px solid #5C4742;
+    font-style: oblique;
+}
+
+.drink-name {
+    float: left;
+    font-style: unset;
+    padding-left: 1%;
+}
+
+#price-heading {
     float: right;
     font-style: unset;
     font-size: larger;
-  }
-  
-  #drink-heading{
-      text-align: left;
-      font-size: larger;
-      padding-left: 1%;
-  }
-  
-  /* Image of drinks */
-  #cold-drinks{
+}
+
+#drink-heading {
+    text-align: left;
+    font-size: larger;
+    padding-left: 1%;
+}
+
+/* Image of drinks */
+#cold-drinks {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -412,20 +400,10 @@ body{
     min-height: 300px;
     max-width: 350px;
     max-height: 300px;
-   
+
     padding-top: 5%;
     padding-left: 10%;
-  }
-  
- 
-
-/* CSS Library */
-
-
-
-
-
-
+}
 
 /* CSS TOPICAL PAGE*/
 /*to prevent elements to flow over the 'rows'*/
@@ -434,130 +412,221 @@ body{
     clear: both;
     display: table;
 }
+
 /* For mobile phones: */
 [class*="col-"] {
     width: 100%;
     float: left;
 }
+
 /* For tablets: non selectors overwritten here, only used in html to add width for boxes */
 @media only screen and (min-width: 600px) {
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
+    .col-s-1 {
+        width: 8.33%;
+    }
 
-    div.toplogo img{
+    .col-s-2 {
+        width: 16.66%;
+    }
+
+    .col-s-3 {
+        width: 25%;
+    }
+
+    .col-s-4 {
+        width: 33.33%;
+    }
+
+    .col-s-5 {
+        width: 41.66%;
+    }
+
+    .col-s-6 {
+        width: 50%;
+    }
+
+    .col-s-7 {
+        width: 58.33%;
+    }
+
+    .col-s-8 {
+        width: 66.66%;
+    }
+
+    .col-s-9 {
+        width: 75%;
+    }
+
+    .col-s-10 {
+        width: 83.33%;
+    }
+
+    .col-s-11 {
+        width: 91.66%;
+    }
+
+    .col-s-12 {
+        width: 100%;
+    }
+
+    div.toplogo img {
         display: inline-block;
     }
 }
+
 /* For desktop: when in desktop screen this selectors will override the corresponding selectors below but only the declaration */
 @media only screen and (min-width: 751px) {
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
+    .col-1 {
+        width: 8.33%;
+    }
 
-    div.topnavbar ul{
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+
+    div.topnavbar ul {
         text-align: right;
     }
-    div.topnavbar li{
+
+    div.topnavbar li {
         display: inline-block;
     }
-    div.row2{
+
+    div.row2 {
         display: flex;
 
     }
-    div.scroll img{
+
+    div.scroll img {
         width: 150px;
     }
 }
+
 /* To change placement of scroll and title when we arent at desktop screen,
     might be confusing why this happened if we were supposed to be building for mobile screen first but we weren't at the beginning so this was the solution to fix the problem*/
-@media only screen and (max-width: 750px){
-    .row2{
+@media only screen and (max-width: 750px) {
+    .row2 {
         display: inline-flex;
         flex-direction: column-reverse;
     }
-    div.title{
+
+    div.title {
         font-size: 30px;
         text-align: center;
         padding: 15px;
     }
-    .row1{
-          display: flex;
-          justify-content: center;
-      }
-    .toplogo{
+
+    .row1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .toplogo {
         margin: auto;
     }
-    .topnavbar ul{
+
+    .topnavbar ul {
         text-align: left;
     }
 }
+
 /*All selectors below are coded with the intention of making mobile screen view priority,
     how it acts out in tablet and desktop breakpoints depends on the chosing of width to our boxes in html.
     The flow of selectors corresponds with the flow of elements in html
 */
 /*Row1*/
-.row1{
+.row1 {
     background-color: #38726C;
 }
-.toplogo img{
+
+.toplogo img {
     height: 100px;
     width: 150px;
     padding-left: 20px;
 }
-.topnavbar{
+
+.topnavbar {
     text-align: center;
     font-size: x-large;
     align-items: center;
     padding-top: 27px;
     padding-right: 3px;
 }
+
 /*Row2*/
-.scroll{
-    background:#352d2a;
+.scroll {
+    background: #352d2a;
     padding: 30px;
 }
-.scroll img{
+
+.scroll img {
     width: 50%;
     height: auto;
     display: flex;
     margin-left: auto;
     margin-right: auto;
 }
+
 .overlay {
     opacity: 0;
     transition: .5s ease;
     background-color: #e7dcc1;
 }
-.scroll:hover .overlay{
+
+.scroll:hover .overlay {
     opacity: 1;
 }
-.scroll a{
+
+.scroll a {
     text-decoration: none;
 }
-.scroll a:visited{
+
+.scroll a:visited {
     color: blue;
 }
-.title{
-    background-color:#5C4742;
+
+.title {
+    background-color: #5C4742;
     color: #A49694;
     padding-right: 10px;
     padding-top: 250px;
@@ -565,128 +634,136 @@ body{
     font-size: 72px;
     text-align: right;
 }
+
 /*row3 and row4*/
-.row3{
+.row3 {
     padding: 10px;
 }
-.row4{
+
+.row4 {
     padding: 10px;
 }
-.information{
+
+.information {
     background-color: #e7dcc1;
     padding: 40px;
     line-height: 1.8;
 }
-.page{
+
+.page {
     padding-bottom: 20px;
 }
-.page2{
+
+.page2 {
     padding-bottom: 10px;
     padding-top: 30px;
 }
-.row5{
+
+.row5 {
     padding: 10px;
     padding-left: 20px;
     background-color: #e7dcc1;
     line-height: 1.8;
 }
+
 /*row5*/
-.row5 .page{
+.row5 .page {
     text-align: center;
 }
-.row5 a:visited{
+
+.row5 a:visited {
     color: blue;
 }
-.ylink{
+
+.ylink {
     text-indent: 50px;
 }
-hr{
-    border: 1px solid #A49694 ;
+
+hr {
+    border: 1px solid #A49694;
     border-radius: 1px;
     width: 95%;
     margin-bottom: 10px;
 }
 
 /* CSS ACCESSIBILITY PAGE*/
+/* Fixed layout for smaller window on desktop */
+@media screen and (max-width: 1120px) {
+    #accessibility {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        grid-row-gap: 40px;
 
 
-/* Fikser lauout for litt mindre størrelse på vindu */
-@media screen and (max-width: 1120px){
-  #accessibility {
-      display: grid;
-      grid-template-columns: 50% 50%;
-      grid-template-rows: auto;
-      grid-row-gap: 40px;
-      
-  
-      padding-left: 2%;
-      padding-right: 3%;
-  
-      margin-right: auto;
-      margin-left: auto;
-      
+        padding-left: 2%;
+        padding-right: 3%;
+
+        margin-right: auto;
+        margin-left: auto;
+
     }
 }
 
-/* Fikser layout for siden */
-#accessibility{
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: auto;
-  grid-row-gap: 15px;
-  grid-column-gap: 10px;
-
-  
-  margin-left: auto;
-  margin-right: auto;
+/* Fixed layout for site using grid template */
+#accessibility {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto;
+    grid-row-gap: 15px;
+    grid-column-gap: 10px;
 
 
-  padding-right: 3%;
-  padding-left: 1%;
+    margin-left: auto;
+    margin-right: auto;
 
-  text-align: center;
-  
 
-  padding-bottom:4%;
+    padding-right: 3%;
+    padding-left: 1%;
+
+    text-align: center;
+
+
+    padding-bottom: 4%;
 }
 
 
-#heading-home-page, #heading-cafeteria, #heading-library, #heading-topical{
-  font-size: x-large;
+#heading-home-page, #heading-cafeteria, #heading-library, #heading-topical {
+    font-size: x-large;
 }
 
 
-/* Fikser layout for liten størrelse på vindu */
-@media screen and (max-width: 600px){
-    #accessibility{
-      display: grid;
-      grid-template-columns: 100%;
-      grid-template-rows: auto;
-      grid-row-gap: 40px;
-      
-  
-      padding-left: 2%;
-      padding-right: 3%;
-  
-      margin-right: auto;
-      margin-left: auto;
-      
+/* Fixed layout for even smaller window on desktop */
+@media screen and (max-width: 600px) {
+    #accessibility {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-row-gap: 40px;
+
+
+        padding-left: 2%;
+        padding-right: 3%;
+
+        margin-right: auto;
+        margin-left: auto;
+
     }
 
-    #HovedOverskrift{
-      font-size:60px;
-      text-align: center;
-      padding-top: 3%;
+    #HovedOverskrift {
+        font-size: 60px;
+        text-align: center;
+        padding-top: 3%;
     }
 }
 
 
-.text-content{
-  width: 95%;
-  font-size: large 
+.text-content {
+    width: 95%;
+    font-size: large
 }
 
-#accessibility-pictures{
+#accessibility-pictures {
     display: block;
     padding-left: 20%;
     padding-right: 20%;
@@ -696,19 +773,16 @@ hr{
     text-align: center;
 }
 
-#accessibility-pictures img{
+#accessibility-pictures img {
     height: 100%;
-    width: 100%;+
+    width: 100%;
++
 
 }
 
-
-
-
 /* FOOTER */
-
+/*Styling for footer on every page*/
 footer {
-    
     background-color: #38726C;
     color: white;
     text-align: center;
@@ -716,11 +790,12 @@ footer {
     padding: 200px auto auto auto;
 }
 
-.footer-box-container{
+/*CCS grid container template used to display the footer*/
+.footer-box-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: auto;
-    margin:0px auto;
+    margin: 0px auto;
     width: 70%;
 }
 
@@ -738,20 +813,22 @@ footer {
     display: inline-flex;
 }
 
+/*Sizing for all less then normal desktop screen*/
 @media (max-width: 1000px) {
-    .footer-box-container{
-        display:block;
+    .footer-box-container {
+        display: block;
     }
 
 }
-    /**Changed the mailto link to be white since the default is dark blue and it clashes with the footer color**/
-.footer-links{
+
+/**Changed the mailto link to be white since the default is dark blue and it clashes with the footer color**/
+.footer-links {
     color: white;
     text-decoration-line: none;
 }
 
-.footer-links:hover{
-    text-decoration-line:underline;
+.footer-links:hover {
+    text-decoration-line: underline;
 }
 
 

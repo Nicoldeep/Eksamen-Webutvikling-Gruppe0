@@ -1,253 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Topical Page</title>
+    <title>Topical Page</title>
 
-        <link rel="stylesheet" href="../Stylesheets/stylesheet.css">
-        <!--We have this code here because of box-sizing which messed up the other sites, box-sizing was used to include padding and border in the element's total height and width. Which was only taken an account for on this site-->
-        <style>
-            *{
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-                scroll-behavior: smooth;
-            }
-        </style>
-    </head>
+    <link rel="stylesheet" href="../Stylesheets/stylesheet.css">
+    <!--We have this code here because of box-sizing which messed up the other sites, box-sizing was used to include padding and border in the element's total height and width. Which was only taken an account for on this site-->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
 
-    <body>
-    <!--First row is the logo picture which is also a button, buttons to take us to the different pages of our website-->
-    <div class="row row1">
-        <div class="col-1 col-s-6 toplogo">
-            <!-- Image taken from https://kommunikasjon.ntb.no/presserom/15678779/oslomet/mi?item=logo-16984812, owned by NTB-->
-            <a href="index.html"><img src="../Pictures/oslometLogo.png" alt="Navbarlogo"></a>
+<body>
+<!--First row is the logo picture which is also a button, buttons to take us to the different pages of our website-->
+<div class="row row1">
+    <div class="col-1 col-s-6 toplogo">
+        <!-- Image taken from https://kommunikasjon.ntb.no/presserom/15678779/oslomet/mi?item=logo-16984812, owned by NTB-->
+        <a href="index.html"><img src="../Pictures/oslometLogo.png" alt="Navbarlogo"></a>
+    </div>
+    <div class="col-11 col-s-12 topnavbar">
+        <ul>
+            <li class="links"><a href="index.html" class="nav-text"> Home </a></li>
+            <li class="links"><a href="cafeteria.html" class="nav-text"> Cafeteria </a></li>
+            <li class="links"><a href="library.html" class="nav-text"> Univerisity Library </a></li>
+            <li class="links"><a href="topicalPage.html" class="nav-text"> Topical page</a></li>
+            <li class="links"><a href="accessibilityPage.html" class="nav-text"> Accessibility page</a></li>
+        </ul>
+    </div>
+</div>
+<!--Second row is our photos used for scroll and the big titel to the page-->
+<div class="row row2">
+    <div class="col-3 col-s-12 scroll">
+        <!--section1 and section2 are to link the scroll function with the id below in row3 and row4 such that the picture is the scroll button.-->
+        <a href="#section1"><img src="../Pictures/PicturesTopcialPage/Techandsoc.jpg"
+                                 alt="scroll down to 'The interplay between technology and society'"></a>
+        <div class="overlay">
+            <div>Press this photo to read about the interplay between technology and society. Photo is taken from
+                <!--Link to the picture is also a future on the website, photo is taken from a free copyright website-->
+                <a href="https://www.pexels.com/nb-no/bilde/teknologi-mekanisk-medisinsk-medisin-3912992/">'Pexels'</a>
+            </div>
         </div>
-        <div class="col-11 col-s-12 topnavbar">
-            <ul>
-                <li class="links"><a href="index.html" class="nav-text"> Home </a> </li>
-                <li class="links"><a href="cafeteria.html" class="nav-text"> Cafeteria </a> </li>
-                <li class="links"><a href="library.html" class="nav-text"> Univerisity Library </a> </li>
-                <li class="links"><a href="topicalPage.html" class="nav-text"> Topical page</a> </li>
-                <li class="links"><a href="accessibilityPage.html" class="nav-text"> Accessibility page</a> </li>
-            </ul>
+        <a href="#section2"><img src="../Pictures/PicturesTopcialPage/artificial.jpg"
+                                 alt="scroll down to 'what is algorithms'"></a>
+        <div class="overlay">
+            <div>Press this photo to read about big data and artificial intelligence. Photo is taken from
+                <!--Link to the picture is also a future on the website, photo is taken from a free copyright website-->
+                <a href="https://www.pexels.com/nb-no/bilde/teknologi-uskarphet-maskineri-figur-2103864/">'Pexels'</a>
+            </div>
         </div>
     </div>
-    <!--Second row is our photos used for scroll and the big titel to the page-->
-    <div class="row row2">
-        <div class="col-3 col-s-12 scroll">
-            <!--section1 and section2 are to link the scroll function with the id below in row3 and row4 such that the picture is the scroll button.-->
-            <a href="#section1"><img src="../Pictures/PicturesTopcialPage/Techandsoc.jpg"
-                    alt="scroll down to 'The interplay between technology and society'"></a>
-            <div class="overlay">
-                <div>Press this photo to read about the interplay between technology and society. Photo is taken from
-                    <!--Link to the picture is also a future on the website, photo is taken from a free copyright website-->
-                    <a href="https://www.pexels.com/nb-no/bilde/teknologi-mekanisk-medisinsk-medisin-3912992/">'Pexels'</a>
-                </div>
-            </div>
-            <a href="#section2"><img src="../Pictures/PicturesTopcialPage/artificial.jpg"
-                    alt="scroll down to 'what is algorithms'"></a>
-            <div class="overlay">
-                <div>Press this photo to read about big data and artificial intelligence. Photo is taken from
-                     <!--Link to the picture is also a future on the website, photo is taken from a free copyright website-->
-                    <a href="https://www.pexels.com/nb-no/bilde/teknologi-uskarphet-maskineri-figur-2103864/">'Pexels'</a></div>
-                </div>
-            </div>
-        <div class="col-9 col-s-12 title">
-            <h2>TOPICAL PAGE:</h2>
-            <h3>Technology and society</h3>
-        </div>
+    <div class="col-9 col-s-12 title">
+        <h2>TOPICAL PAGE:</h2>
+        <h3>Technology and society</h3>
     </div>
-    <!-- All text written in row3 and row4 is from our own work in Data1100 from assignment module 1 and 6-->
-    <div class="row row3">
-        <div class="col-12 col-s-24 information" id="section1">
-            <h2 class="page">Technology and society</h2>
-            <h4 class="page2">The politics of infrastructure</h4>
+</div>
+<!-- All text written in row3 and row4 is from our own work in Data1100 from assignment module 1 and 6-->
+<div class="row row3">
+    <div class="col-12 col-s-24 information" id="section1">
+        <h2 class="page">Technology and society</h2>
+        <h4 class="page2">The politics of infrastructure</h4>
+        <p>
+            We rely on the internet to get current day information which includes the days political news.
+            Politicians use social media platforms to spread their ideology and to gain followers, but they don’t
+            have total freedom to do so. There are consequences to using social media platforms because they have
+            their own rules and regulations. And if a politician were to break any of those rules, they risk getting
+            banned from the platform which would greatly affect their reach. Because we are so reliant on the
+            internet, there would be major consequences if someone were to abuse the infrastructure. A current day
+            example is Russia and the limitations they have put in place to quench information regarding the current
+            war. They control the information that gets fed to the user, and thus affect the users’ political views.
+            There have also been dictatorial shutdowns of the internet infrastructure of a whole country in order to
+            prevent discussion and spread of information. We have all heard of the term “fake news” and how that
+            affects political views, whether it be about vaccines or the distrust of politicians. In our agreeable
+            opinion, to ensure safe consumption of information, one should use different medias, even outside of the
+            internet so that the internet wouldn’t have as much of a consequence on our politics in case it all went
+            berserk.
+        </p>
+        <h4 class="page2">RRI (Responsible Research and innovation)</h4>
+        <p>
+            The statement “The person who invented the train invented the train crash” is great way of understanding
+            the societal responsibilities innovators are involved in. We have a general understanding of
+            consequences when something is being innovated, yet there will always be unintended consequences like
+            climate changes and nuclear pollution. We believe development of technology requires care and good
+            intentions after it has been developed for it to end up as good intentions. Example of Frankenstein
+            mistake being not following up on his monster and caring about it (The breakthrough Institiute, 2012).
+            Innovators have the responsibility to manage the work they do with ethical guidelines, understanding
+            what impact it has on society and the risk it can cause. As an example, when developing an AI,
+            innovators have the responsibility to follow up the technology, so it doesn’t run unattended. Worst case
+            scenario, AI will try to kill humanity, or even worse, puppies. Despite being a seemingly high risk, the
+            use of AI in a society will have an immense positive effect to societies all over the world. As long as
+            the developers and innovators of AI do it in a way that the AI doesn't go crazy it will have a positive
+            outcome. All in all, a great way of solving misunderstanding of consequences in a project is by
+            innovators considering themselves as citizens and a part of society, because we’re all stuck on planet
+            earth for now.
+        </p>
+    </div>
+</div>
+<div class="row row4">
+    <div class="col-12 col-s-24 information" id="section2">
+        <h3 class="page">Big data and aritifical intelligence</h3>
+        <h4 class="page2">How does algorithms play a part in your life</h4>
+        <p>
+            We start by explaining what our understanding of algorithms is, and so to tell by what our tiny brains
+            understand is that it is a sequence of numeric variables playing a role for an outcome. In other words,
+            algorithm is a recipe to a product, answer, or in our case recipe to solve a problem. Algorithms have a
+            big role in our daily life, all kinds of machines function on it. Different algorithms for different
+            “problems”. Our phone, pc at work, calculators when we aren’t smart enough to do the math with our brain
+            etc. We mostly see the solved part of most algorithms, not the solving part. The reason for that is most
+            human brains can’t fathom how complex algorithms work. Neither could we, how java actually works is not
+            something we know. We might have an idea but not a full understanding. We write something and the
+            algorithm solves it. Our main questions are then how do we make complex algorithms? Someone has to make
+            them, right? Our initial guess is that all algorithms started small. Easy algorithms like one and one
+            equals two, and someone put several algorithms together to make a complex one. In other words, if we
+            understand this right, algorithms are something all humans can do, just not maybe understand?
+        </p>
+        <h4 class="page2">Artifical Intelligence</h4>
+        <p>
+            We don’t know much about the health care industry. What we do know is that anytime we get sick, feel
+            some sort of pain, or have any kind of symptoms for something, we go to the doctor to get a medical
+            point of view. In most of our cases doctors have good guidance and experience on what might be our
+            problem and prescribes us with a solution, sometimes being a drug. But what about the cases which aren’t
+            the usual ones. We are talking about ER and spontaneous incidents of symptoms that can be caused by all
+            kinds of health problems. Symptoms like tumor, internal bleeding, extreme coughing etc. These situations
+            would be hard for a doctor to understand the underlying problem of the patient just by looking at them.
+            Or in other words just by one symptom which could just be one of several symptoms to come. And yes, with
+            common sense one can understand that more symptoms make it easier to know what causes the symptoms. Or
+            if there have been past symptoms and past ER visits it will be in the patient journal. But there are
+            millions of health problems in the book, so which one could it be? With machine learning or AI to help
+            this all would be easier right? Not entirely. Yes, we believe it will help with narrowing cause of
+            problems if the data the machine has is enough and right, but it can also narrow it too much down with
+            little data of certain problems, or vice versa. Then there is the trusting part, if the variables
+            machine has considered is the right ones (if the tests are correct). The main challenge we believe to be
+            is, “when is the data enough to make medical decisions?”
+        </p>
+    </div>
+</div>
+<!--row5 is links to resources not really much related to the topics but is the same links used in data1100 for the assignments-->
+<div class="row row5">
+    <div class="col-6 col-s-12 video">
+        <h4 class="page">Recommened video-resources related to the topics</h4>
+        <hr>
+        <div class="page2">
             <p>
-                We rely on the internet to get current day information which includes the days political news.
-                Politicians use social media platforms to spread their ideology and to gain followers, but they don’t
-                have total freedom to do so. There are consequences to using social media platforms because they have
-                their own rules and regulations. And if a politician were to break any of those rules, they risk getting
-                banned from the platform which would greatly affect their reach. Because we are so reliant on the
-                internet, there would be major consequences if someone were to abuse the infrastructure. A current day
-                example is Russia and the limitations they have put in place to quench information regarding the current
-                war. They control the information that gets fed to the user, and thus affect the users’ political views.
-                There have also been dictatorial shutdowns of the internet infrastructure of a whole country in order to
-                prevent discussion and spread of information. We have all heard of the term “fake news” and how that
-                affects political views, whether it be about vaccines or the distrust of politicians. In our agreeable
-                opinion, to ensure safe consumption of information, one should use different medias, even outside of the
-                internet so that the internet wouldn’t have as much of a consequence on our politics in case it all went
-                berserk.
+                The Colombian city Medellín, where the development of transportation infrastructure has been a means
+                of improving the living conditions of marginalized groups. If you want to learn more about this, you
+                can watch this video:
             </p>
-            <h4 class="page2">RRI (Responsible Research and innovation)</h4>
+            <p class="ylink">
+                <iframe allowfullscreen src="https://www.youtube.com/embed/jqsMuC7X2kE"></iframe>
+            </p>
+        </div>
+        <div class="page2">
             <p>
-                The statement “The person who invented the train invented the train crash” is great way of understanding
-                the societal responsibilities innovators are involved in. We have a general understanding of
-                consequences when something is being innovated, yet there will always be unintended consequences like
-                climate changes and nuclear pollution. We believe development of technology requires care and good
-                intentions after it has been developed for it to end up as good intentions. Example of Frankenstein
-                mistake being not following up on his monster and caring about it (The breakthrough Institiute, 2012).
-                Innovators have the responsibility to manage the work they do with ethical guidelines, understanding
-                what impact it has on society and the risk it can cause. As an example, when developing an AI,
-                innovators have the responsibility to follow up the technology, so it doesn’t run unattended. Worst case
-                scenario, AI will try to kill humanity, or even worse, puppies. Despite being a seemingly high risk, the
-                use of AI in a society will have an immense positive effect to societies all over the world. As long as
-                the developers and innovators of AI do it in a way that the AI doesn't go crazy it will have a positive
-                outcome. All in all, a great way of solving misunderstanding of consequences in a project is by
-                innovators considering themselves as citizens and a part of society, because we’re all stuck on planet
-                earth for now.
+                Artificial intelligence in healthcare: opportunities and challenges by Navnid Toosi Saidy. If you
+                want to learn more about this, you can watch this video:
+            </p>
+            <p class="ylink">
+                <iframe allowfullscreen src="https://www.youtube.com/embed/uvqDTbusdUU"></iframe>
             </p>
         </div>
     </div>
-    <div class="row row4">
-        <div class="col-12 col-s-24 information" id="section2">
-            <h3 class="page">Big data and aritifical intelligence</h3>
-            <h4 class="page2">How does algorithms play a part in your life</h4>
+    <div class="col-6 col-s-12 text">
+        <h4 class="page">Recommened text-resources related to the topics</h4>
+        <hr>
+        <div class="page2">
             <p>
-                We start by explaining what our understanding of algorithms is, and so to tell by what our tiny brains
-                understand is that it is a sequence of numeric variables playing a role for an outcome. In other words,
-                algorithm is a recipe to a product, answer, or in our case recipe to solve a problem. Algorithms have a
-                big role in our daily life, all kinds of machines function on it. Different algorithms for different
-                “problems”. Our phone, pc at work, calculators when we aren’t smart enough to do the math with our brain
-                etc. We mostly see the solved part of most algorithms, not the solving part. The reason for that is most
-                human brains can’t fathom how complex algorithms work. Neither could we, how java actually works is not
-                something we know. We might have an idea but not a full understanding. We write something and the
-                algorithm solves it. Our main questions are then how do we make complex algorithms? Someone has to make
-                them, right? Our initial guess is that all algorithms started small. Easy algorithms like one and one
-                equals two, and someone put several algorithms together to make a complex one. In other words, if we
-                understand this right, algorithms are something all humans can do, just not maybe understand?
+                The concept 'hostile architecture' refers to design that is deliberately hampering access to public
+                space for different groups, such as homeless people or skateboarders. You can read about it in this
+                article in the newspaper The Guardian:
             </p>
-            <h4 class="page2">Artifical Intelligence</h4>
+            <p class="ylink"><a
+                    href="https://www.theguardian.com/artanddesign/2014/jun/13/anti-homeless-spikes-hostile-architecture">Quinn,
+                B. (2014, June 13). Anti-homeless spikes are part of a wider phenomenon of “hostile
+                architecture.” The Guardian.</a></p>
+        </div>
+        <div class="page2">
             <p>
-                We don’t know much about the health care industry. What we do know is that anytime we get sick, feel
-                some sort of pain, or have any kind of symptoms for something, we go to the doctor to get a medical
-                point of view. In most of our cases doctors have good guidance and experience on what might be our
-                problem and prescribes us with a solution, sometimes being a drug. But what about the cases which aren’t
-                the usual ones. We are talking about ER and spontaneous incidents of symptoms that can be caused by all
-                kinds of health problems. Symptoms like tumor, internal bleeding, extreme coughing etc. These situations
-                would be hard for a doctor to understand the underlying problem of the patient just by looking at them.
-                Or in other words just by one symptom which could just be one of several symptoms to come. And yes, with
-                common sense one can understand that more symptoms make it easier to know what causes the symptoms. Or
-                if there have been past symptoms and past ER visits it will be in the patient journal. But there are
-                millions of health problems in the book, so which one could it be? With machine learning or AI to help
-                this all would be easier right? Not entirely. Yes, we believe it will help with narrowing cause of
-                problems if the data the machine has is enough and right, but it can also narrow it too much down with
-                little data of certain problems, or vice versa. Then there is the trusting part, if the variables
-                machine has considered is the right ones (if the tests are correct). The main challenge we believe to be
-                is, “when is the data enough to make medical decisions?”
+                This site contains information about RRI - Responsible Research and Innovation:
+            </p>
+            <p class="ylink"><a
+                    href="https://ec.europa.eu/programmes/horizon2020/en/h2020-section/responsible-research-innovation">European
+                Commission website</a></p>
+        </div>
+        <div class="page2">
+            <p>
+                The story of the scientist Frankenstein who created a monster that he lost control over is a
+                powerful allegory for innovation gone wrong. In this essay, the philosopher Bruno Latour argues that
+                Frankenstein's sin was not his attempt to create a human being, but his negligence of the creature
+                he had created. He argues that innovation needs to be followed up with care for what has been
+                developed, to avoid that technological development gets out of hand and to ensure beneficial
+                outcomes of innovations. (The breakthrough Institiute, 2012)
+            </p>
+            <p class="ylink"><a href="https://thebreakthrough.org/journal/issue-2/love-your-monsters">Latour, B.
+                (2012). Love Your Monsters - Why We Must Care for Our Technologies As We Do Our Children.</a>
             </p>
         </div>
     </div>
-    <!--row5 is links to resources not really much related to the topics but is the same links used in data1100 for the assignments-->
-    <div class="row row5">
-        <div class="col-6 col-s-12 video">
-            <h4 class="page">Recommened video-resources related to the topics</h4>
-            <hr>
-            <div class="page2">
-                <p>
-                    The Colombian city Medellín, where the development of transportation infrastructure has been a means
-                    of improving the living conditions of marginalized groups. If you want to learn more about this, you
-                    can watch this video:
-                </p>
-                <p class="ylink"><iframe  allowfullscreen src="https://www.youtube.com/embed/jqsMuC7X2kE"></iframe></p>
-            </div>
-            <div class="page2">
-                <p>
-                    Artificial intelligence in healthcare: opportunities and challenges by Navnid Toosi Saidy. If you
-                    want to learn more about this, you can watch this video:
-                </p>
-                <p class="ylink"><iframe  allowfullscreen src="https://www.youtube.com/embed/uvqDTbusdUU"></iframe></p>
-            </div>
+</div>
+<!--Just the footer cause we wanted all the pages to be coherent to a degree-->
+<footer>
+    <div class="footer-box-container">
+        <div class="footer-box-1">
+            <h1>Studies</h1>
+            <p>
+                Bachelor's programmes in English <br>
+                For exchange students<br>
+                Courses<br>
+                Phd opportunities<br>
+            </p>
         </div>
-        <div class="col-6 col-s-12 text">
-            <h4 class="page">Recommened text-resources related to the topics</h4>
-            <hr>
-            <div class="page2">
-                <p>
-                    The concept 'hostile architecture' refers to design that is deliberately hampering access to public
-                    space for different groups, such as homeless people or skateboarders. You can read about it in this
-                    article in the newspaper The Guardian:
-                </p>
-                <p class="ylink"><a
-                        href="https://www.theguardian.com/artanddesign/2014/jun/13/anti-homeless-spikes-hostile-architecture">Quinn,
-                        B. (2014, June 13). Anti-homeless spikes are part of a wider phenomenon of “hostile
-                        architecture.” The Guardian.</a></p>
-            </div>
-            <div class="page2">
-                <p>
-                    This site contains information about RRI - Responsible Research and Innovation:
-                </p>
-                <p class="ylink"><a
-                        href="https://ec.europa.eu/programmes/horizon2020/en/h2020-section/responsible-research-innovation">European
-                        Commission website</a></p>
-            </div>
-            <div class="page2">
-                <p>
-                    The story of the scientist Frankenstein who created a monster that he lost control over is a
-                    powerful allegory for innovation gone wrong. In this essay, the philosopher Bruno Latour argues that
-                    Frankenstein's sin was not his attempt to create a human being, but his negligence of the creature
-                    he had created. He argues that innovation needs to be followed up with care for what has been
-                    developed, to avoid that technological development gets out of hand and to ensure beneficial
-                    outcomes of innovations. (The breakthrough Institiute, 2012)
-                </p>
-                <p class="ylink"><a href="https://thebreakthrough.org/journal/issue-2/love-your-monsters">Latour, B.
-                        (2012). Love Your Monsters - Why We Must Care for Our Technologies As We Do Our Children.</a>
-                </p>
-            </div>
+        <div class="footer-box-2">
+            <h1>Services</h1>
+            <p>
+                For Students <br>
+                For Employees <br>
+            </p>
+        </div>
+        <div class="footer-box-3">
+            <h1>Contact</h1>
+            <p>
+                Contact us <br>
+                Find Employees <br>
+                Press contact <br>
+            </p>
+        </div>
+        <div class="footer-box-4">
+            <h1>Social Media</h1>
+            <p>
+                Instagram<br>
+                Facebook<br>
+                LinkedIn <br>
+            </p>
         </div>
     </div>
-    <!--Just the footer cause we wanted all the pages to be coherent to a degree-->
-    <footer>
-        <div class="footer-box-container">
-            <div class="footer-box-1">
-                <h1>Studies</h1>
-                <p>
-                    Bachelor's programmes in English <br>
-                    For exchange students<br>
-                    Courses<br>
-                    Phd opportunities<br>
-                </p>
-            </div>
-            <div class="footer-box-2">
-                <h1>Services</h1>
-                <p>
-                    For Students <br>
-                    For Employees <br>
-                </p>
-            </div>
-            <div class="footer-box-3">
-                <h1>Contact</h1>
-                <p>
-                    Contact us <br>
-                    Find Employees <br>
-                    Press contact <br>
-                </p>
-            </div>
-            <div class="footer-box-4">
-                <h1>Social Media</h1>
-                <p>
-                    Instagram<br>
-                    Facebook<br>
-                    LinkedIn <br>
-                </p>
-            </div>
-        </div>
 
-        <hr id="footer-line">
+    <hr id="footer-line">
 
-        <div class="footer-under">
-            <p>Opening hours: 10:00 AM - 10:00 PM, Mon-Fri</p>
-            <p>Contact info:</p>
-            <address>
-                <p>Tlf: <a href="tel: 41 23 12 34" class="footer-links">41 23 12 34</a> </p>
-                <p>E-mail: <a href="mailto:Oslomet@somewhere.com" class="footer-links">Oslomet@somewhere.com</a></p>
-                <p>Address: Pilestredet 32, 1234 Oslo</p>
-            </address>
-        </div>
-    </footer>
+    <div class="footer-under">
+        <p>Opening hours: 10:00 AM - 10:00 PM, Mon-Fri</p>
+        <p>Contact info:</p>
+        <address>
+            <p>Tlf: <a href="tel: 41 23 12 34" class="footer-links">41 23 12 34</a></p>
+            <p>E-mail: <a href="mailto:Oslomet@somewhere.com" class="footer-links">Oslomet@somewhere.com</a></p>
+            <p>Address: Pilestredet 32, 1234 Oslo</p>
+        </address>
+    </div>
+</footer>
 </body>
 
 </html>
